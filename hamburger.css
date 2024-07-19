@@ -7,6 +7,11 @@
     gap: 5px;
     padding: 8px;
 }
+@media (min-width: 990px) {
+    .header_menu-button {
+        display: none;
+    }
+}
 
 .header_menu-button-line-1 {
     transition: .6s;
