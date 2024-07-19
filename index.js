@@ -1,7 +1,8 @@
 const menuToggleIcon = document.getElementById('menuToggle')
 const header = document.getElementById('header-wrapper')
 const navigation = document.querySelector('.navigation')
-const navItems = document.querySelectorAll('.nav-item')
+const navItems = document.querySelectorAll('.nav-item-content')
+const dropdownArrows = document.querySelectorAll('.mobile-dropdown-arrow')
 
 menuToggleIcon.addEventListener('click', function() {
     this.classList.toggle('active');
@@ -14,16 +15,17 @@ menuToggleIcon.addEventListener('click', function() {
 });
 
 
-navItems.forEach((item) => {
+navItems.forEach((item, idx) => {
     
     item.addEventListener('click', ()=> {
-         navItems.forEach( otherItem => {
+         navItems.forEach( (otherItem, idx) => {
             if(otherItem !== item) {
                 otherItem.classList.remove('active')
+                dropdownArrows[idx].classList.remove('opened')
             }
          })
          item.classList.toggle('active')
-            
+         dropdownArrows[idx].classList.add('opened')
             
             
         })

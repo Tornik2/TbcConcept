@@ -138,7 +138,6 @@ ul {
 .nav-item {
     padding: 32px 15px;
     border-bottom: 1px solid #d1d5d6;
-    cursor: pointer;
 }
 
 .nav-item-content {
@@ -148,6 +147,7 @@ ul {
     font-family: 'TbcBold', 'sans-serif';
     font-size: 18px;
     color: #141719;
+    cursor: pointer;
 }
 .nav-item ul {
     max-height: 0;
@@ -157,7 +157,7 @@ ul {
     transition: max-height 1s;
 }
 
-.nav-item.active ul {
+.nav-item-content.active + ul {
     max-height: 500px;    
 }
 
@@ -167,4 +167,12 @@ ul {
     color: rgb(85, 95, 98);
     padding-top: 20px;
     
+}
+.mobile-dropdown-arrow {
+    transform: rotate(0);
+    transition: all 0.4s;
+}
+
+.mobile-dropdown-arrow.opened {
+    transform: rotate(180deg);
 }
