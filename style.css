@@ -265,11 +265,12 @@ ul {
 .section-main-wrapper {
     padding: 32px 0 36px 0;
 }
-
+.section-main-tbc-concept-background {
+    background-image: url('/assets/section-main-banner-mobile.webp');
+}
 .section-main-banner {
     position: relative;
     min-height: 360px;
-    background-image: url('/assets/section-main-banner-mobile.webp');
     background-size: cover;
     background-position: center;
     display: flex;
@@ -296,6 +297,7 @@ ul {
     display: flex;
     flex-direction: column;
     padding-bottom: 20px;
+    width: 100%;
 }
 
 .main-banner-content h1 {
@@ -737,5 +739,10 @@ ul {
         gap: 16px;
     }
 
+}
+
+/* Section Personal Banker */
+.section-personal-banker {
+    background-image: url('/assets/personal-banker.png');
 }
 
