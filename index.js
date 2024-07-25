@@ -26,10 +26,18 @@ navItems.forEach((item, idx) => {
          })
          item.classList.toggle('active')
          dropdownArrows[idx].classList.add('opened')
-            
-            
         })
+})
 
-        
-    
+// Google Play and Appstore Images
+import {base64GooglePlay} from './googleplay.js'
+import { base64AppStore } from './appstore.js'
+
+document.addEventListener('DOMContentLoaded', () => {
+    const googlePlayImage = document.querySelector('.google-play')
+    const appStoreImage = document.querySelector('.appstore')
+    googlePlayImage.src = base64GooglePlay
+    appStoreImage.src = base64AppStore
+
+
 })
