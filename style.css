@@ -559,12 +559,65 @@ ul {
     .cards-wrapper {
         overflow: hidden;
     }
-    
 }
 
 @media (min-width: 992px) {
     .section-become-concept {
         padding: 60px 0;
     }
-
 }
+
+/* Section Numbers */
+.section-padding-top-bottom {
+    padding: 36px 0;
+}
+.numbers-wrapper {
+    display: grid;
+    grid-gap: 16px;
+}
+.numbers-item {
+    display: grid;
+    grid-row-gap: 16px;
+    padding: 24px;
+    background-color: rgb(255 255 255);
+}
+
+.numbers-item h2 {
+    font-family: 'TbcBold', 'sans-serif';
+    font-size: 36px;
+    color: rgb(20, 23, 25);
+}
+.numbers-item p {
+    font-family: 'TbcMedium', 'sans-serif';
+    font-size: 14px;
+    color: rgb(85, 95, 98);
+}
+
+@media (min-width: 480px) {
+    .section-padding-top-bottom {
+        padding: 40px 0;
+    }
+    .numbers-item {
+        padding: 40px 48px;
+    }
+    .numbers-item h2 {
+        font-size: 44px;
+    }
+    .numbers-item p {
+        font-size: 16px;
+    }
+}
+@media (min-width: 768px) {
+    .section-padding-top-bottom {
+            padding: 50px 0;
+        }
+}
+@media (min-width: 992px) {
+    .section-padding-top-bottom {
+            padding: 60px 0;
+        }
+    .numbers-wrapper {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
