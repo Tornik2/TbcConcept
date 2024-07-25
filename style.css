@@ -443,11 +443,10 @@ ul {
 }
 .cards-become-concept {
     display: grid;
-    grid-template-columns: repeat(3, auto);
+    grid-template-columns: repeat(3, 280px);
+    grid-template-rows: 234px;
     grid-gap: 20px;
     width: fit-content;
-    padding: 0 15px;
-    border: 1px solid red;
 }
 
 .cards-wrapper {
@@ -458,8 +457,6 @@ ul {
 .card-wrapper {
     position: relative;
     padding: 24px;
-    width: 280px;
-    height: 234px;
     border-radius: 8px;
     overflow: hidden;
     cursor: pointer;
@@ -528,4 +525,46 @@ ul {
 }
 .arrow-link:active svg {
     fill: rgb(255 255 255);
+}
+
+@media (min-width: 480px) {
+    .section-become-concept {
+        padding: 40px 0;
+    }
+    .heading-wrapper {
+        margin-bottom: 28px;
+    }
+    .heading-wrapper h2 {
+        font-size: 24px;
+    }
+}
+@media (min-width: 768px) {
+    .section-become-concept {
+        padding: 50px 0;
+    }
+    .heading-wrapper {
+        margin-bottom: 36px;
+    }
+    .cards-become-concept {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 234px);
+        grid-gap: 30px;
+        width: 100%;   
+    }
+    .cards-become-concept .card-wrapper:nth-child(2) {
+        grid-row: 1 / -1;
+        grid-column: 2 / -1;
+    }
+    .cards-wrapper {
+        overflow: hidden;
+    }
+    
+}
+
+@media (min-width: 992px) {
+    .section-become-concept {
+        padding: 60px 0;
+    }
+
 }
