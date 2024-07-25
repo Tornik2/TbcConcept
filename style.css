@@ -757,7 +757,6 @@ ul {
 /* Footer */
 /* Footer Top */
 .footer-wrapper {
-    padding-top: 36px;
     background-color: rgb(255 255 255);
     border-radius: 4px;
 }
@@ -829,3 +828,87 @@ ul {
 .language-list p:hover {
     background-color: rgb(238 241 241);
 }
+
+/* footer main - contact us  */
+.footer-contacts {
+    background-color: rgb(255 255 255);
+    padding: 32px 15px;
+}
+
+.footer-contacts h2 {
+    font-family: 'TbcBold', 'sans-serif';
+    font-size: 16px;
+    color: rgb(20, 23, 25);
+}
+.contact-ways {
+    display: flex;
+    flex-direction: column;
+    margin: 32px 0 48px;
+    gap: 32px;
+}
+
+.contact {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.contact-ways a {
+    font-family: 'TbcMedium', 'sans-serif';
+    color: rgb(85, 95, 98);
+    font-size: 14px;
+}
+
+.contact:hover a {
+    text-decoration: underline;
+}
+
+.social h2 {
+    margin-bottom: 24px;
+}
+.social-icons {
+    display: flex;
+    gap: 15px;
+}
+.social-icon {
+    width: 52px;
+    height: 52px;
+    background-color: rgb(249 250 250);
+    border-radius: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color .25s ease-in-out, color .25s ease-in-out;
+}
+.social-icon:hover {
+    background-color: rgb(238 238 238);
+    color: rgb(24 44 192);
+}
+
+@media (min-width: 480px) {
+    .footer-contacts {
+        padding: 56px 45px;
+    }
+    .footer-contacts h2 {
+        font-size: 24px;
+    }
+    .contact-ways {
+        margin: 32px 0;
+    }
+}
+@media (min-width: 768px) {
+    .footer-contacts{
+        padding: 0;
+    }
+    .footer-contacts h2 {
+        font-size: 14px;
+    }
+    .contact-ways {
+        gap: 16px;
+    }
+    .social h2 {
+        margin-bottom: 16px;
+    }
+}
+
