@@ -689,6 +689,12 @@ ul {
         grid-template-columns: repeat(3, 1fr);
     }
 }
+/* Section - offers */
+.section-offers-heading {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
 /* Section Download App */
 .get-app-wrapper {
     background-color: rgb(255 255 255);

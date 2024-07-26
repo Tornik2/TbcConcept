@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+p,
+h3 {
+    margin: 0;
+}
+
+.photo {
+    height: 55%;
+    position: relative;
+}
+
+.slider-card-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card-logo {
+    width: 78px;
+    height: 56px;
+    position: absolute;
+    background-color: #fff;
+    top: 20px;
+    right: 0;
+    border-bottom-left-radius: 6px;
+    border-top-left-radius: 6px
+}
+
+.slider-container {
+    height: 340px;
+    width: 100%;
+    border: 1px solid rgb(189, 15, 15);
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.slider {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    pointer-events: none;
+    user-select: none;
+    padding: 0 15px;
+}
+
+.card {
+    margin-right: 15px;
+
+    width: calc(100vw / 1.4);
+    border: 1px solid rgb(225, 228, 229);
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-description {
+    height: 163px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    grid-row-gap: 12px;
+}
+
+.card-category {
+    font-family: 'TbcBold', 'sans-serif';
+    font-size: 12px;
+    color: rgb(111 120 123);
+    margin-bottom: 4px;
+}
+
+.card-title {
+    color: rgb(20, 23, 25);
+    font-family: 'TbcBold', 'sans-serif';
+    font-size: 14px;
+}
+
+
+.custom-scroll {
+    width: 33%;
+    height: 6px;
+    background-color: greenyellow;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: unset;
+}
+
+.scrollbar-container {
+    height: 6px;
+    background-color: rgb(3, 8, 8);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
