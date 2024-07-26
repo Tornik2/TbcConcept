@@ -2,8 +2,13 @@ const header = document.getElementById('header-container')
 const menuToggleIcon = document.getElementById('menuToggle')
 const navigation = document.querySelector('.navigation')
 const dropdowns = document.querySelectorAll('.dropdown-list')
-
 const navItems = document.querySelectorAll('.nav-list-item')
+
+//for footer dropdows 
+const footerItems = document.querySelectorAll('.footer-list-item')
+const footerDropdowns = document.querySelectorAll('.footer-dropdown-list')
+console.log(footerDropdowns,footerItems)
+
 const dropdownArrows = document.querySelectorAll('.mobile-dropdown-arrow')
 
 menuToggleIcon.addEventListener('click', function() {
@@ -17,25 +22,10 @@ menuToggleIcon.addEventListener('click', function() {
 });
 
 
-
-// navItems.forEach((item, idx) => {    
-//     item.addEventListener('click', ()=> {
-//          navItems.forEach( (otherItem, idx) => {
-//             if(otherItem !== item) {
-//          dropdowns[idx].style.maxHeight = 0
-//                 otherItem.classList.remove('active')
-//             }
-//          })
-//          if(item.classList.contains('active')) {
-//             dropdowns[idx].style.maxHeight = '0px'
-//          } else {
-//             dropdowns[idx].style.maxHeight = dropdowns[idx].scrollHeight + 'px'  
-//          }
-//         item.classList.toggle('active')
-         
-//         })
-// })
+console.log(navItems, dropdowns, footerItems, footerDropdowns)
 toggleDropdowns(navItems, dropdowns)
+toggleDropdowns(footerItems, footerDropdowns)
+
 function toggleDropdowns(elArray, dropdownsArray) {
     elArray.forEach((item, index) => {
         item.addEventListener('click', () => {
@@ -67,3 +57,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 })
+// slider padding for 1300> screens
+const slider = document.querySelector('.slider')
+const sectionHeading = document.querySelector('.section-heading')
+document.addEventListener('DOMContentLoaded', ()=> {
+    
+    if(window.innerWidth < 1440) {
+    slider.style.padding = `0 ${sectionHeading.offsetLeft + 'px'}` 
+    }
+})
+console.log(sectionHeading.offsetLeft)

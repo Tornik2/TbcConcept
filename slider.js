@@ -1,7 +1,7 @@
 const sliderContainer = document.querySelector('.slider-container')
 const slider = document.querySelector('.slider')
 const scrollbarThumb = document.querySelector('.custom-scroll')
-const scrollbarContainer = document.querySelector('.scrollbar-container')
+const scrollbarContainer = document.querySelector('.scrollbar-container-inner')
 
 
 
@@ -137,9 +137,17 @@ sliderContainer.addEventListener('touchmove', move)
 })()
 
 function updateSliderContainerHeight() {
-    sliderContainer.style.height = (slider.offsetHeight +20)+ 'px'
+    if (window.innerWidth > 767) {
+        sliderContainer.style.height = (slider.offsetHeight +38)+ 'px'
+    } else if (window.innerWidth > 479) {
+        sliderContainer.style.height = (slider.offsetHeight +28)+ 'px'
+    } else {
+        sliderContainer.style.height = (slider.offsetHeight +20)+ 'px'
+    }
+    
 }
 document.addEventListener('DOMContentLoaded', updateSliderContainerHeight)
+updateSliderContainerHeight()
 window.addEventListener('resize', () => {
     updateSliderContainerHeight()
 })

@@ -695,6 +695,11 @@ ul {
     justify-content: space-between;
     margin-bottom: 20px;
 }
+@media (min-width: 480px) {
+    .section-offers-heading {
+        margin-bottom: 28px;
+    }
+}
 /* Section Download App */
 .get-app-wrapper {
     background-color: rgb(255 255 255);
@@ -924,6 +929,14 @@ footer {
 .footer-list-wrapper .nav-list{
     margin: 0;
 }
+.footer-list-dropdown-arrow {
+    transform: rotate(0);
+    transition: all 1s ease;
+}
+
+.footer-list-item.active .footer-list-dropdown-arrow {
+    transform: rotate(180deg);
+}
 
 @media (min-width: 480px) {
     .footer-list-wrapper {
@@ -975,6 +988,7 @@ footer {
     .footer-list-dropdown-arrow {
         display: none;
     }
+    
     .footer-list-wrapper .item-content {
         font-family: 'TbcBold', 'sans-serif';
         font-size: 14px;
