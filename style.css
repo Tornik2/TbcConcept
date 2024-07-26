@@ -244,7 +244,7 @@ ul {
     }
 
     header,
-    .nav-list-item {
+    .list-item {
         background-color: #fff;
     }
 
@@ -892,11 +892,92 @@ footer {
 .language-list p:hover {
     background-color: rgb(238 241 241);
 }
+@media (min-width: 480px) {
+    .footer-top {
+        padding: 36px 0;
+    }
+}
+@media (min-width: 768px) {
+    .footer-top {
+        padding: 45px 0 50px;
+    }
+}
+/* footer dropdown  */
+.footer-list-wrapper {
+    margin: 0 -15px;
+}
+.footer-list-wrapper .item-content {
+    font-size: 16px;
+}
+.footer-list-wrapper .list-item {
+    padding: 24px 15px;
+}
+.footer-list-wrapper .nav-list:nth-child(1) {
+        border-top: 1px solid #d1d5d6;
+}
+.footer-list-wrapper .nav-list{
+    margin: 0;
+}
+
+@media (min-width: 480px) {
+    .footer-list-wrapper {
+        margin: 0 -45px;
+    }
+    .footer-list-wrapper .item-content {
+        font-size: 24px;
+    }
+
+    .footer-list-wrapper .list-item {
+        padding: 36px 45px;
+    }
+}
+@media (min-width: 768px) {
+    .footer-list-wrapper {
+        margin: 0;
+    }
+    .footer-main {
+        display: grid;
+        grid-template-columns: 3fr 1fr;
+        grid-column-gap: 16px;
+
+    }
+    .footer-list-wrapper .nav-list {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-column-gap: 16px;
+    }
+    .footer-list-wrapper .list-item {
+        border: none;
+        padding: 0;
+    }
+    .footer-list-wrapper .nav-list:nth-child(1) {
+        border-top: none;
+    }
+    .footer-list-wrapper .dropdown-list {
+        margin-top: 24px;
+        max-height: 300px;
+        overflow: unset;
+        display: flex;
+        grid-row-gap: 16px;
+    }
+    .footer-list-wrapper .nav-dropdown-item {
+        padding: 0;
+        font-family: 'TbcRegular', 'sans-serif';
+            color: rgb(85, 95, 98);
+            font-size: 14px;
+    }
+    .footer-list-dropdown-arrow {
+        display: none;
+    }
+    .footer-list-wrapper .item-content {
+        font-family: 'TbcBold', 'sans-serif';
+        font-size: 14px;
+        color: rgb(20, 23, 25);
+    }
+}
 
 /* footer main - contact us  */
-.footer-main {
 
-}
 .footer-contacts {
     padding: 32px 0;
 }
