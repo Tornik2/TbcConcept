@@ -1,7 +1,9 @@
+const header = document.getElementById('header-container')
 const menuToggleIcon = document.getElementById('menuToggle')
-const header = document.getElementById('header-wrapper')
 const navigation = document.querySelector('.navigation')
-const navItems = document.querySelectorAll('.nav-item-content')
+const dropdowns = document.querySelectorAll('.dropdown-list')
+
+const navItems = document.querySelectorAll('.nav-list-item')
 const dropdownArrows = document.querySelectorAll('.mobile-dropdown-arrow')
 
 menuToggleIcon.addEventListener('click', function() {
@@ -15,19 +17,43 @@ menuToggleIcon.addEventListener('click', function() {
 });
 
 
-navItems.forEach((item, idx) => {
-    
-    item.addEventListener('click', ()=> {
-         navItems.forEach( (otherItem, idx) => {
-            if(otherItem !== item) {
-                otherItem.classList.remove('active')
-                dropdownArrows[idx].classList.remove('opened')
+
+// navItems.forEach((item, idx) => {    
+//     item.addEventListener('click', ()=> {
+//          navItems.forEach( (otherItem, idx) => {
+//             if(otherItem !== item) {
+//          dropdowns[idx].style.maxHeight = 0
+//                 otherItem.classList.remove('active')
+//             }
+//          })
+//          if(item.classList.contains('active')) {
+//             dropdowns[idx].style.maxHeight = '0px'
+//          } else {
+//             dropdowns[idx].style.maxHeight = dropdowns[idx].scrollHeight + 'px'  
+//          }
+//         item.classList.toggle('active')
+         
+//         })
+// })
+toggleDropdowns(navItems, dropdowns)
+function toggleDropdowns(elArray, dropdownsArray) {
+    elArray.forEach((item, index) => {
+        item.addEventListener('click', () => {
+            elArray.forEach((otherItem, idx) => {
+                if(otherItem !== item) {
+                    dropdownsArray[idx].style.maxHeight = '0px'
+                    otherItem.classList.remove('active')
+                }
+            })
+            if(item.classList.contains('active')) {
+            dropdownsArray[index].style.maxHeight = '0px'
+            } else {
+            dropdownsArray[index].style.maxHeight = dropdownsArray[index].scrollHeight + 'px'  
             }
-         })
-         item.classList.toggle('active')
-         dropdownArrows[idx].classList.add('opened')
+            item.classList.toggle('active')
         })
-})
+    })
+}
 
 // Google Play and Appstore Images
 import {base64GooglePlay} from './googleplay.js'
