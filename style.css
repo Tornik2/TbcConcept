@@ -64,6 +64,7 @@ ul {
 /* Header */
 .header-placeholder {
     height: 79px;
+    width: 1px;
 }
 
 .header-container {
@@ -236,7 +237,12 @@ ul {
 .nav-list-item.active .mobile-dropdown-arrow {
     transform: rotate(180deg);
 }
-
+@media (max-width: 380px) {
+    header .header-container  {
+        width: 380px;
+        overflow: hidden;
+    }
+}
 
 @media (min-width: 480px) {
     .container {
@@ -736,7 +742,8 @@ ul {
     line-height: 1.7;
 }
 .get-app-inner .get-app-img {
-    width: 370px;
+    width: 100%;
+    max-width: 370px;
     height: 482px;
 }
 .get-app-button-mobile {
