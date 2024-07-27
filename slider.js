@@ -1,18 +1,28 @@
+// for offers section
 const sliderContainer = document.querySelector('.slider-container');
 const slider = document.querySelector('.slider');
 const scrollbarThumb = document.querySelector('.custom-scroll')
 const scrollbarContainer = document.querySelector('.scrollbar-container-inner')
-// for offers section
+
 sliderFunctionality(sliderContainer, slider, scrollbarThumb, scrollbarContainer)
 
-
+// for products section
 const prodSection = document.querySelector('.section-products')
 const prodsliderContainer = prodSection.querySelector('.slider-container')
 const prodSlider = prodSection.querySelector('.slider')
 const prodScrollbarThumb = prodSection.querySelector('.custom-scroll')
 const prodScrollbarContainer = prodSection.querySelector('.scrollbar-container-inner')
-// for products section 
+ 
 sliderFunctionality(prodsliderContainer, prodSlider, prodScrollbarThumb, prodScrollbarContainer)
+
+// for rewards section
+const rewSection = document.querySelector('.section-rewards')
+const rewsliderContainer = rewSection.querySelector('.slider-container')
+const rewSlider = rewSection.querySelector('.slider')
+const rewScrollbarThumb = rewSection.querySelector('.custom-scroll')
+const rewScrollbarContainer = rewSection.querySelector('.scrollbar-container-inner')
+ 
+sliderFunctionality(rewsliderContainer, rewSlider, rewScrollbarThumb, rewScrollbarContainer)
 
 
 function sliderFunctionality(sliderContainer, slider, scrollbarThumb, scrollbarContainer) {
