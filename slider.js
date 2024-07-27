@@ -16,6 +16,18 @@ sliderFunctionality(prodsliderContainer, prodSlider, prodScrollbarThumb, prodScr
 
 
 function sliderFunctionality(sliderContainer, slider, scrollbarThumb, scrollbarContainer) {
+    // no scrollbar for big screens if theres no more than 3 cards
+    function checkCardCount () {
+        if(window.innerWidth > 1439) {
+        let cardsCount = sliderContainer.querySelectorAll('.card').length
+        scrollbarContainer.style.display = cardsCount <= 3 ? 'none' : 'block'
+    } else {
+        scrollbarContainer.style.display = 'block'
+    }
+    }
+    checkCardCount()
+    window.addEventListener('resize', checkCardCount)
+    
     // Store the initial translateX value in pixels
     slider.dataset.mouseDownAt = '0';
     slider.dataset.prevTranslateX = '0';

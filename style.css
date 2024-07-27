@@ -833,7 +833,20 @@ ul {
     }
 
 }
+/* Section Personal Banker */
 
+.section-products .slider-card-description {
+    height: auto;
+}
+
+.products-card-description p{
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: wrap;
+}
 /* Section Personal Banker */
 .section-personal-banker {
     background-image: url('/assets/personal-banker.png');
@@ -1103,6 +1116,11 @@ footer {
     }
     .social h2 {
         margin-bottom: 16px;
+    }
+}
+@media (min-width: 992px) {
+    footer .footer-contacts h2 {
+        font-size: 14px;
     }
 }
 
