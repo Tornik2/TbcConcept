@@ -58,18 +58,20 @@ document.addEventListener('DOMContentLoaded', () => {
 
 })
 // slider padding for 1300> screens
-const slider = document.querySelector('.slider')
+const sliders = document.querySelectorAll('.slider')
 const sectionHeading = document.querySelector('.section-heading')
 function setSliderPadding() {
-    if(window.innerWidth < 1440) {
-    slider.style.paddingLeft = `${sectionHeading.offsetLeft + 'px'}` 
-    slider.style.paddingRight = `${sectionHeading.offsetLeft + 'px'}` 
-    } else {
+    sliders.forEach(slider => {
+        if(window.innerWidth < 1440) {
+        slider.style.paddingLeft = `${sectionHeading.offsetLeft + 'px'}` 
+        slider.style.paddingRight = `${sectionHeading.offsetLeft + 'px'}` 
+        } else {
         slider.style.paddingLeft = '0'
         slider.style.paddingRight = '0' 
         }
+    })
+    
 }
 document.addEventListener('DOMContentLoaded', setSliderPadding)
 window.addEventListener('resize', setSliderPadding)
 
-console.log(typeof(window.innerWidth))
