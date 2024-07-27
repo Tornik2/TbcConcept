@@ -63,7 +63,7 @@ h3 {
 
 @media (min-width: 992px) {
     .card {
-        width: calc(100vw / 3);
+        width: calc(100vw / 3.2);
     }
 
     .card:hover {
