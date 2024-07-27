@@ -50,6 +50,7 @@ li {
 
 a {
     text-decoration: none;
+    cursor: pointer;
 }
 
 ul {
@@ -179,12 +180,12 @@ ul {
     background-color: #fff;
     opacity: 0;
     visibility: hidden;
-    transition: opacity 0.4s ease;
+    transition: all 0.4s ease;
 }
 
 .navigation.active {
     opacity: 1;
-    visibility: unset;
+    visibility:visible;
 }
 .nav-list {
     margin-bottom: 32px;
@@ -213,13 +214,18 @@ ul {
 }
 
 
-
+.nav-dropdown-item {
+    cursor: pointer;
+}
 .list-item .nav-dropdown-item {
     font-family: 'TbcRegular', 'sans-serif';
     font-size: 16px;
     color: rgb(85, 95, 98);
-    padding-top: 20px;
-
+    margin-top: 20px;
+    transition: color .25s ease-in-out;
+}
+.nav-list-item .nav-dropdown-item:hover {
+    color: rgb(24 44 192);
 }
 
 .mobile-dropdown-arrow {
@@ -700,6 +706,11 @@ ul {
         margin-bottom: 28px;
     }
 }
+@media (min-width: 768px) {
+    .section-offers-heading {
+        margin-bottom: 36px;
+    }
+}
 /* Section Download App */
 .get-app-wrapper {
     background-color: rgb(255 255 255);
@@ -954,6 +965,9 @@ footer {
     .footer-list-wrapper {
         margin: 0;
     }
+    .navigation .footer-main {
+        display: block;
+    }
     .footer-main {
         display: grid;
         grid-template-columns: 3fr 1fr;
@@ -982,8 +996,8 @@ footer {
     .footer-list-wrapper .nav-dropdown-item {
         padding: 0;
         font-family: 'TbcRegular', 'sans-serif';
-            color: rgb(85, 95, 98);
-            font-size: 14px;
+        color: rgb(85, 95, 98);
+        font-size: 14px;
     }
     .footer-list-dropdown-arrow {
         display: none;
@@ -1072,8 +1086,17 @@ footer {
     .footer-contacts{
         padding: 0;
     }
+    .navigation .footer-contacts {
+        padding: 56px 0;
+    }
+    .navigation .footer-contacts h2 {
+        font-size: 24px;
+    }
     .footer-contacts h2 {
         font-size: 14px;
+    }
+    .navigation .contact-ways {
+        gap: 32px
     }
     .contact-ways {
         gap: 16px;
@@ -1106,6 +1129,7 @@ footer {
     font-family: 'TbcRegular', 'sans-serif';
     font-size: 14px;
     color: rgb(85, 95, 98);
+    cursor: pointer;
 }
 
 .footer-bottom-logo-wrapper {

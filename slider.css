@@ -1,120 +1,99 @@
 * {
-    margin: 0;
-    padding: 0;
     box-sizing: border-box;
 }
-@font-face {
-    font-family: 'TbcBold';
-    src: url('/fonts/TBCXBold.6db5e61d.woff2') format('woff2');
-    font-weight: 700;
-    font-style: normal;
+
+body {
+    margin: 0
 }
 
-@font-face {
-    font-family: 'TbcMedium';
-    src: url('/fonts/TBCXMedium.8ef1248a.woff2') format('woff2');
-    font-weight: 500;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'TbcRegular';
-    src: url('/fonts/TBCXRegular.dee156cc.woff2') format('woff2');
-    font-weight: 400;
-    font-style: normal;
-}
 p,
 h3 {
     margin: 0;
 }
 
-.photo {
-    height: 55%;
-    position: relative;
-}
-
-.slider-card-image {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.card-logo {
-    width: 78px;
-    height: 56px;
-    position: absolute;
-    background-color: #fff;
-    top: 20px;
-    right: 0;
-    border-bottom-left-radius: 6px;
-    border-top-left-radius: 6px
-}
-
 .slider-container {
-    height: 366px;
-    width: 100%;
-    margin: 0 auto;
-    position: relative;
+    width: 100vw;
     overflow: hidden;
+    user-select: none;
+    position: relative;
+    display: flex;
+
 }
 
 .slider {
-    position: absolute;
-    top: 0;
-    left: 0;
+    padding-bottom: 20px;
     display: flex;
-    pointer-events: none;
+    gap: 15px;
+    transition: transform 0.4s ease;
     user-select: none;
-    grid-column-gap: 15px;
 }
 
 .card {
+    
     width: calc(100vw / 1.4);
-    border: 1px solid rgb(225, 228, 229);
-    border-radius: 10px;
     overflow: hidden;
     display: flex;
     flex-direction: column;
+    border: 1px solid rgb(225, 228, 229);
+    border-radius: 10px;
+    cursor: pointer;
 }
+
 @media (min-width: 480px) {
     .card {
         width: calc(100vw / 1.5)
     }
+
+    .slider {
+        padding-bottom: 28px;
+    }
 }
+
 @media (min-width: 600px) {
     .card {
         width: calc(100vw / 2.5)
     }
 }
-@media (min-width: 600px) {
-    .card {
-        width: calc(100vw / 2.9)
+
+@media (min-width: 768px) {
+    .slider {
+        padding-bottom: 38px;
     }
 }
 
+@media (min-width: 992px) {
+    .card {
+        width: calc(100vw / 3);
+    }
 
-.card-description {
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-    grid-row-gap: 12px;
+    .card:hover {
+        background-color: rgb(255 255 255);
+    }
+
+    .card:hover .photo .slider-card-image {
+        transform: translateY(-5px);
+    }
 }
 
-.card-category {
-    font-family: 'TbcBold', 'sans-serif';
-    font-size: 12px;
-    color: rgb(111 120 123);
-    margin-bottom: 4px;
-    display: flex;
-    align-items: baseline;
-    grid-column-gap: 12px;
+@media (min-width: 992px) {
+    .slider {
+        gap: 30px;
+    }
 }
-
-.card-description .card-title {
-    color: rgb(20, 23, 25);
-    font-family: 'TbcBold', 'sans-serif';
-    font-size: 14px;
+@media (min-width: 1440px) {
+    .slider-container {
+        max-width: 1100px;
+        margin: 0 auto;    
+    }
+    .slider {
+        padding: 0 0 38px;
+    }
+    .card {
+        width: calc((1100px - 60px) / 3);
+    }
+    .scrollbar-container.container {
+        padding: 0;
+    }
 }
 
 
@@ -122,13 +101,14 @@ h3 {
     width: 33%;
     height: 2px;
     background: rgb(24 44 192);
-    border-radius: 1px;    
+    border-radius: 1px;
     position: absolute;
     bottom: 0;
     left: 0;
     right: unset;
 }
 
+/* scrollbar-styles */
 .scrollbar-container {
     height: 2px;
     border-radius: 1px;
@@ -145,24 +125,74 @@ h3 {
     overflow: hidden;
 }
 
+
+/* card content*/
+.photo {
+    height: 55%;
+    position: relative;
+    display: flex;
+    overflow: hidden;
+}
+
+.card-logo {
+    width: 78px;
+    height: 56px;
+    position: absolute;
+    background-color: #fff;
+    top: 20px;
+    right: 0;
+    border-bottom-left-radius: 6px;
+    border-top-left-radius: 6px
+}
+
+.slider-card-description {
+    height: 45%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.card-category {
+    font-family: 'TbcBold', 'sans-serif';
+    font-size: 12px;
+    color: rgb(111 120 123);
+    display: flex;
+    align-items: baseline;
+    grid-column-gap: 12px;
+    margin-bottom: 4px;
+}
+
+.card-title {
+    color: rgb(20, 23, 25);
+    font-family: 'TbcBold', 'sans-serif';
+    font-size: 14px;
+}
+
+.photo img {
+    pointer-events: none;
+}
+
+.photo .slider-card-image {
+    display: block;
+    width: 100%;
+    height: 110%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+
 @media (min-width: 768px) {
-    .card-description .card-title {
+    .slider-card-description .card-title {
         font-size: 16px;
     }
-}
-@media (min-width: 1440px) {
-    .slider-container {
-        max-width: 1100px;
+
+    .photo {
+        height: 60%;
     }
 
-    .slider-container .slider {
-        padding: 0;
-    }
-    .slider-container .scrollbar-container {
-        padding: 0;
-    }
-
-    .slider-container .card {
-        width: 366px;
+    .slider-card-description {
+        height: 40%;
+        padding: 28px;
     }
 }

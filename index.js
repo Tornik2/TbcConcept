@@ -7,7 +7,6 @@ const navItems = document.querySelectorAll('.nav-list-item')
 //for footer dropdows 
 const footerItems = document.querySelectorAll('.footer-list-item')
 const footerDropdowns = document.querySelectorAll('.footer-dropdown-list')
-console.log(footerDropdowns,footerItems)
 
 const dropdownArrows = document.querySelectorAll('.mobile-dropdown-arrow')
 
@@ -22,13 +21,14 @@ menuToggleIcon.addEventListener('click', function() {
 });
 
 
-console.log(navItems, dropdowns, footerItems, footerDropdowns)
 toggleDropdowns(navItems, dropdowns)
 toggleDropdowns(footerItems, footerDropdowns)
 
 function toggleDropdowns(elArray, dropdownsArray) {
     elArray.forEach((item, index) => {
-        item.addEventListener('click', () => {
+        item.addEventListener('click', (e) => {
+            e.stopPropagation()
+            if(e.target !== item) return
             elArray.forEach((otherItem, idx) => {
                 if(otherItem !== item) {
                     dropdownsArray[idx].style.maxHeight = '0px'
@@ -60,10 +60,16 @@ document.addEventListener('DOMContentLoaded', () => {
 // slider padding for 1300> screens
 const slider = document.querySelector('.slider')
 const sectionHeading = document.querySelector('.section-heading')
-document.addEventListener('DOMContentLoaded', ()=> {
-    
+function setSliderPadding() {
     if(window.innerWidth < 1440) {
-    slider.style.padding = `0 ${sectionHeading.offsetLeft + 'px'}` 
-    }
-})
-console.log(sectionHeading.offsetLeft)
+    slider.style.paddingLeft = `${sectionHeading.offsetLeft + 'px'}` 
+    slider.style.paddingRight = `${sectionHeading.offsetLeft + 'px'}` 
+    } else {
+        slider.style.paddingLeft = '0'
+        slider.style.paddingRight = '0' 
+        }
+}
+document.addEventListener('DOMContentLoaded', setSliderPadding)
+window.addEventListener('resize', setSliderPadding)
+
+console.log(typeof(window.innerWidth))
