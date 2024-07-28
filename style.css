@@ -1282,6 +1282,7 @@ footer {
 
 /* Button menu */
 .button-menu-wrapper {
+    z-index: 1000;
     position: fixed;
     right: 15px;
     bottom: 15px;
@@ -1328,6 +1329,26 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
+}
+.bottom-menu-button-text {
+    position: absolute;
+    right: 68px;
+    color: #fff;
+    white-space: nowrap;
+    background-color: rgb(66 74 77);
+    border-radius: 6px;
+    padding: 8px 12px;
+    font-size: 14px;
+    font-family: 'TbcRegular', 'sans-serif';
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.5 ease-in-out;
+}
+.triangle-svg {
+    position: absolute;
+    left: 100%;
+    bottom: 0;
 }
 .open-bottom-menu {
     opacity: 1;
@@ -1354,9 +1375,7 @@ footer {
     justify-content: center;
     align-items: center;
 }
-.icon-container svg {
-    
-}
+
 
 @media (min-width: 480px) {
     .button-menu-wrapper {
@@ -1376,6 +1395,16 @@ footer {
     .button-menu-wrapper {
         bottom: 32px;
         right: 32px;
+    }
+    .bottom-menu-button:hover {
+        background-color: #3295ce;
+    }
+    .bottom-menu-button:hover > svg {
+        fill: rgb(255 255 255)
+    }
+    .bottom-menu-button:hover .bottom-menu-button-text{
+        opacity: 1;
+        visibility: visible;
     }
 }
 
