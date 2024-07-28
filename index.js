@@ -23,7 +23,7 @@ menuToggleIcon.addEventListener('click', function() {
 
 toggleDropdowns(navItems, dropdowns)
 toggleDropdowns(footerItems, footerDropdowns)
-console.log(document.querySelector('.scrollable-content'))
+
 function toggleDropdowns(elArray, dropdownsArray) {
     elArray.forEach((item, index) => {
         item.addEventListener('click', (e) => {

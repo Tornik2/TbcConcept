@@ -9,7 +9,7 @@
     <title>TBC Concepts</title>
   </head>
   <body>
-    <header>
+     <header>
       <div class="header-placeholder"></div>
       <div class="container header-container" id="header-container">
         <div class="header-wrapper" id="header-wrapper">
@@ -18,7 +18,9 @@
             <a href="#" target="_blank"><div class="logo"></div></a>
             <!-- navigation -->
             <nav class="navigation">
-              <ul class="nav-list">
+              <ul class="nav-list ">
+              <div class="nav-list-item-wrapper">
+
                 <li class="nav-list-item list-item">
                   <div class="nav-item-content item-content">
                     <span>პროდუქტები</span>
@@ -28,12 +30,14 @@
                       class="mobile-dropdown-arrow"
                     />
                   </div>
-                  <ul class="dropdown-list">
+                </li>
+                <ul class="dropdown-list">
                     <li class="nav-dropdown-item">პროდუქტების მიმოხილვა</li>
                     <li class="nav-dropdown-item">ნაკრები</li>
                     <li class="nav-dropdown-item">პირადი ბანკირი</li>
                   </ul>
-                </li>
+                </div>
+                <div class="nav-list-item-wrapper">
                 <li class="nav-list-item list-item">
                   <div class="nav-item-content item-content">
                     <span>შეთავაზებები</span>
@@ -43,14 +47,14 @@
                       class="mobile-dropdown-arrow"
                     />
                   </div>
-
-                  <ul class="dropdown-list">
+                </li>
+                <ul class="dropdown-list">
                     <li class="nav-dropdown-item">მიმოხილვა</li>
                     <li class="nav-dropdown-item">შეთავაზებები</li>
                     <li class="nav-dropdown-item">ღონისძიებები</li>
                   </ul>
-                </li>
-
+                </div>
+                <div class="nav-list-item-wrapper">
                 <li class="nav-list-item list-item">
                   <div class="nav-item-content item-content">
                     <span>კონცეპტის სივრცე</span>
@@ -60,14 +64,14 @@
                       class="mobile-dropdown-arrow"
                     />
                   </div>
-
-                  <ul class="dropdown-list">
+                </li>
+                <ul class="dropdown-list">
                     <li class="nav-dropdown-item">მიმოხილვა</li>
                     <li class="nav-dropdown-item">კაფე</li>
                     <li class="nav-dropdown-item">ბიბლიოთეკა</li>
                     <li class="nav-dropdown-item">კონცეპტ ფილიალები</li>
                   </ul>
-                </li>
+                </div>
               </ul>
               <!-- footer-for-top-navigation -->
               <div class="navigation-footer" id="navigation-footer">
@@ -802,14 +806,13 @@
                     />
                   </div>
                   <ul class="dropdown-list footer-dropdown-list">
-                    <li class="nav-dropdown-item">პროდუქტების მიმოხილვა</li>
                     <li class="nav-dropdown-item">ნაკრები</li>
-                    <li class="nav-dropdown-item">პირადი ბანკირი</li>
+                    <li class="nav-dropdown-item">პერსონალური ბანკირი</li>
                   </ul>
                 </li>
                 <li class="footer-list-item list-item">
                   <div class="nav-item-content item-content">
-                    <span>შეთავაზებები</span>
+                    <span>Lifestyle</span>
                     <img
                       src="/assets/footer-dropdown-arrow.svg"
                       alt="mobile mobile-dropdown-arrow"
@@ -818,7 +821,6 @@
                   </div>
 
                   <ul class="dropdown-list footer-dropdown-list">
-                    <li class="nav-dropdown-item">მიმოხილვა</li>
                     <li class="nav-dropdown-item">შეთავაზებები</li>
                     <li class="nav-dropdown-item">ღონისძიებები</li>
                   </ul>
@@ -835,10 +837,10 @@
                   </div>
 
                   <ul class="dropdown-list footer-dropdown-list">
-                    <li class="nav-dropdown-item">მიმოხილვა</li>
+                    
                     <li class="nav-dropdown-item">კაფე</li>
                     <li class="nav-dropdown-item">ბიბლიოთეკა</li>
-                    <li class="nav-dropdown-item">კონცეპტ ფილიალები</li>
+                    
                   </ul>
                 </li>
               </ul>
@@ -870,29 +872,9 @@
                 <h2>სოციალური ქსელები</h2>
                 <div class="social-icons">
                   <div class="social-icon">
-                    <svg
-                      width="17"
-                      height="16"
-                      viewBox="0 0 17 16"
-                      fill="currentColor"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <g clip-path="url(#clip0_167_7547)">
-                        <path
-                          d="M9.83464 9.00163H11.5013L12.168 6.33496H9.83464V5.00163C9.83464 4.31496 9.83464 3.66829 11.168 3.66829H12.168V1.42829C11.9506 1.39963 11.13 1.33496 10.2633 1.33496C8.4533 1.33496 7.16797 2.43963 7.16797 4.46829V6.33496H5.16797V9.00163H7.16797V14.6683H9.83464V9.00163Z"
-                        ></path>
-                      </g>
-                      <defs>
-                        <clipPath id="clip0_167_7547">
-                          <rect
-                            width="16"
-                            height="16"
-                            fill="white"
-                            transform="translate(0.5 0.000976562)"
-                          ></rect>
-                        </clipPath>
-                      </defs>
-                    </svg>                  </div>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"><path fill="currentColor" d="M8.46 18h2.93v-7.3h2.45l.37-2.84h-2.82V6.04c0-.82.23-1.38 1.41-1.38h1.51V2.11c-.26-.03-1.15-.11-2.19-.11c-2.18 0-3.66 1.33-3.66 3.76v2.1H6v2.84h2.46z"/></svg>                  
+                
+                  </div>
                   <div class="social-icon">
                     <svg
                       width="17"
@@ -955,7 +937,7 @@
         </div>
         <div class="bottom-menu-button">
           <div class="bottom-menu-button-text">
-            <p>მოგვწერეთ</p>
+            <p>ქოლ ცენტრი</p>
             <div class="triangle-svg">
               <svg data-v-42e74cda="" width="8" height="24" viewBox="0 0 8 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path data-v-42e74cda="" d="M6.87662 14.8284L1.12339 20.8284C0.404095 21.5786 7.66111e-07 22.596 8.12483e-07 23.6569L2.04844e-07 0.343145C2.51216e-07 1.40401 0.404094 2.42143 1.12339 3.17157L6.87661 9.17157C8.37446 10.7337 8.37446 13.2663 6.87662 14.8284Z" fill="#424A4D"></path></svg>
             </div>
@@ -964,7 +946,7 @@
         </div>
         <div class="bottom-menu-button">
           <div class="bottom-menu-button-text">
-            <p>მოგვწერეთ</p>
+            <p>მისამართი</p>
             <div class="triangle-svg">
               <svg data-v-42e74cda="" width="8" height="24" viewBox="0 0 8 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path data-v-42e74cda="" d="M6.87662 14.8284L1.12339 20.8284C0.404095 21.5786 7.66111e-07 22.596 8.12483e-07 23.6569L2.04844e-07 0.343145C2.51216e-07 1.40401 0.404094 2.42143 1.12339 3.17157L6.87661 9.17157C8.37446 10.7337 8.37446 13.2663 6.87662 14.8284Z" fill="#424A4D"></path></svg>
             </div>
