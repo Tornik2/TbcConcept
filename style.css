@@ -27,6 +27,7 @@
 }
 
 /* defaults */
+
 body {
     color: #555f62;
     background-color: rgb(249 250 250);
@@ -885,12 +886,21 @@ ul {
 /* Section Rewards */
 
 .section-rewards .card {
+    border: 1px solid #fff;
     flex-direction: row;
     grid-column-gap: 0;
     padding: 28px;
     background-color: rgb(255 255 255);
     border: none;
+    transition: border-color .4s ease-in-out, box-shadow .4s ease-in-out;
 }
+@media (min-width: 992px) {
+    .section-rewards .card:hover {
+        box-shadow: 0 36px 40px -15px rgba(12, 43, 67, .07);
+        border-color: rgb(238 241 241);
+    }
+}
+
 .section-rewards .slider-card-description {
     padding: 0;
     gap: 16px;
@@ -1267,5 +1277,111 @@ footer {
     .footer-bottom-links span,
     .footer-bottom-logo-wrapper p {
         font-size: 12px;
+    }
+}
+
+/* Button menu */
+.button-menu-wrapper {
+    position: fixed;
+    right: 15px;
+    bottom: 15px;
+}
+.button-menu {
+    background-color: rgb(66 74 77);
+    width: 48px;
+    height: 48px;
+    padding: 12px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color .25s ease-in-out;
+    position: relative;
+}
+
+.button-menu:hover {
+    background-color: rgba(66, 74, 77, .8);
+}
+
+
+.buttons {
+    position: absolute;
+    bottom: 56px;
+    display: flex;
+    flex-direction: column;
+    grid-row-gap: 8px;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.5s ease;
+    
+}
+.buttons.active{
+    visibility: visible;
+    opacity: 1;
+}
+
+.bottom-menu-button {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    cursor: pointer;
+    border: 1px solid rgb(238 241 241);
+    background-color: rgb(255 255 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.open-bottom-menu {
+    opacity: 1;
+    transition: opacity 0.5s ease;
+}
+.close-bottom-menu {
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+.button-menu.active .open-bottom-menu {
+    opacity: 0;
+}
+.button-menu.active .close-bottom-menu {
+    opacity: 1;
+}
+
+.icon-container {
+    position: absolute;
+    width: 48px;
+    height: 48px;
+    left: 0;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.icon-container svg {
+    
+}
+
+@media (min-width: 480px) {
+    .button-menu-wrapper {
+        bottom: 24px;
+        right: 24px;
+    }
+    .button-menu, .bottom-menu-button, .icon-container {
+        width: 56px;
+        height: 56px;
+    }
+    .buttons {
+        grid-row-gap: 12px;
+        bottom: 68px;
+    }
+}
+@media (min-width: 992px) {
+    .button-menu-wrapper {
+        bottom: 32px;
+        right: 32px;
+    }
+}
+
+@media (min-width: 1440px) {
+    .button-menu-wrapper {
+        bottom: 40px;
+        right: 40px;
     }
 }

@@ -28,7 +28,6 @@ function toggleDropdowns(elArray, dropdownsArray) {
     elArray.forEach((item, index) => {
         item.addEventListener('click', (e) => {
             e.stopPropagation()
-            if(e.target !== item) return
             elArray.forEach((otherItem, idx) => {
                 if(otherItem !== item) {
                     dropdownsArray[idx].style.maxHeight = '0px'
@@ -74,4 +73,33 @@ function setSliderPadding() {
 }
 document.addEventListener('DOMContentLoaded', setSliderPadding)
 window.addEventListener('resize', setSliderPadding)
+
+//Bottom Buton menu
+const buttonMenu = document.querySelector('.button-menu')
+const closeBtn = document.querySelector('.close-bottom-menu')
+const openBtn = document.querySelector('.open-bottom-menu')
+const bottomBtns = document.querySelector('.buttons')
+console.log(openBtn, closeBtn)
+buttonMenu.addEventListener('click', () => {
+    if (buttonMenu.classList.contains('active')) {
+        openBtn.style.transitionDelay = '0.5s';
+        closeBtn.style.transitionDelay = '0s';
+        buttonMenu.classList.toggle('active');
+        bottomBtns.classList.toggle('active');
+        setTimeout(() => {
+            openBtn.style.transitionDelay = '0s';
+            closeBtn.style.transitionDelay = '0.5s';
+        }, 0); // Set delay to ensure the above toggle effect is applied
+    } else {
+        openBtn.style.transitionDelay = '0s';
+        closeBtn.style.transitionDelay = '0.5s';
+        buttonMenu.classList.toggle('active');
+        bottomBtns.classList.toggle('active');
+        setTimeout(() => {
+            openBtn.style.transitionDelay = '0.5s';
+            closeBtn.style.transitionDelay = '0s';
+        }, 0); // Set delay to ensure the above toggle effect is applied
+    }
+});
+    
 
