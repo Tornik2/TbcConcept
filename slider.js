@@ -4,7 +4,8 @@ const slider = document.querySelector('.slider');
 const scrollbarThumb = document.querySelector('.custom-scroll')
 const scrollbarContainer = document.querySelector('.scrollbar-container-inner')
 
-sliderFunctionality(sliderContainer, slider, scrollbarThumb, scrollbarContainer)
+sliderFunctionality(sliderContainer, slider, scrollbarThumb, scrollbarContainer)//invoke function
+
 
 // for products section
 const prodSection = document.querySelector('.section-products')
@@ -12,8 +13,9 @@ const prodsliderContainer = prodSection.querySelector('.slider-container')
 const prodSlider = prodSection.querySelector('.slider')
 const prodScrollbarThumb = prodSection.querySelector('.custom-scroll')
 const prodScrollbarContainer = prodSection.querySelector('.scrollbar-container-inner')
- 
-sliderFunctionality(prodsliderContainer, prodSlider, prodScrollbarThumb, prodScrollbarContainer)
+
+sliderFunctionality(prodsliderContainer, prodSlider, prodScrollbarThumb, prodScrollbarContainer) // invoke function
+
 
 // for rewards section
 const rewSection = document.querySelector('.section-rewards')
@@ -22,31 +24,15 @@ const rewSlider = rewSection.querySelector('.slider')
 const rewScrollbarThumb = rewSection.querySelector('.custom-scroll')
 const rewScrollbarContainer = rewSection.querySelector('.scrollbar-container-inner')
  
-sliderFunctionality(rewsliderContainer, rewSlider, rewScrollbarThumb, rewScrollbarContainer)
+sliderFunctionality(rewsliderContainer, rewSlider, rewScrollbarThumb, rewScrollbarContainer) //invoke function
 
 
 function sliderFunctionality(sliderContainer, slider, scrollbarThumb, scrollbarContainer) {
-    // no scrollbar for big screens if theres no more than 3 cards
-    function checkCardCount () {
-        if(window.innerWidth > 1439) {
-        let cardsCount = sliderContainer.querySelectorAll('.card').length
-        scrollbarContainer.style.display = cardsCount <= 3 ? 'none' : 'block'
-    } else {
-        scrollbarContainer.style.display = 'block'
-    }
-    }
-    checkCardCount()
-    window.addEventListener('resize', checkCardCount)
-    
     // Store the initial translateX value in pixels
     slider.dataset.mouseDownAt = '0';
     slider.dataset.prevTranslateX = '0';
     slider.dataset.translateX = '0';
     let mouseDelta = 0
-
-
-
-
 
     const handleOnDown = (clientX) => {
         slider.style.transition = `none`
@@ -63,7 +49,7 @@ function sliderFunctionality(sliderContainer, slider, scrollbarThumb, scrollbarC
         scrollbarThumb.style.transition = `all 0.4s`
 
         slider.dataset.mouseDownAt = '0';
-        //// Check slider and sliderContainer Rects and pass it down to checkBoundary function
+        //// Check slider and sliderContainer Rects to pass it down to checkBoundary function
         let sliderRectRight = slider.getBoundingClientRect().right
         const sliderContainerRectRight = sliderContainer.getBoundingClientRect().right
         const sliderWidth = slider.getBoundingClientRect().width
@@ -71,7 +57,8 @@ function sliderFunctionality(sliderContainer, slider, scrollbarThumb, scrollbarC
                 
         //put current position in a variable
         let currentPosition = parseFloat(slider.dataset.translateX)
-        // // // // // // 
+
+        // slider movement after mouseup// 
         if (mouseDelta > 160) {
         slider.style.transform = `translateX(${currentPosition - 160}px)`;
         slider.dataset.prevTranslateX = currentPosition - 160;
@@ -89,10 +76,9 @@ function sliderFunctionality(sliderContainer, slider, scrollbarThumb, scrollbarC
     } else {
         slider.style.transform = `translateX(${slider.dataset.prevTranslateX}px)`;
     } 
-        checkBoundary(sliderRectRight, sliderContainerRectRight, sliderWidth, sliderContainerWidth)
-        
 
-
+    //check boundaries after mouseup
+    checkBoundary(sliderRectRight, sliderContainerRectRight, sliderWidth, sliderContainerWidth)
     };
 
     const handleOnMove = (clientX) => {
@@ -113,7 +99,7 @@ function sliderFunctionality(sliderContainer, slider, scrollbarThumb, scrollbarC
             slider.style.transform = `translateX(${sliderContainerWidth - sliderWidth}px)`;
             slider.dataset.prevTranslateX = sliderContainerWidth - sliderWidth;
         }
-
+        //update scrollbar position while moving the slider
         updateScrollbar(slider.dataset.prevTranslateX)
     }
 
@@ -128,6 +114,7 @@ function sliderFunctionality(sliderContainer, slider, scrollbarThumb, scrollbarC
         handleOnMove(e.touches[0].clientX);
     });
 
+    // scrollbar position functionality
     function updateScrollbar(leftPosition) {
         const sliderLeft = parseFloat(leftPosition)
         const sliderWidth = slider.offsetWidth;
@@ -143,6 +130,18 @@ function sliderFunctionality(sliderContainer, slider, scrollbarThumb, scrollbarC
         scrollbarThumb.style.left = - (percentage * maxScrollbarMovement) + 'px';
     }
 
+    // no scrollbar for big screens if theres no more than 3 cards
+    function checkCardCount () {
+        if(window.innerWidth > 1439) {
+        let cardsCount = sliderContainer.querySelectorAll('.card').length
+        scrollbarContainer.style.display = cardsCount <= 3 ? 'none' : 'block'
+    } else {
+        scrollbarContainer.style.display = 'block'
+    }
+    }
+    //call checkCardCount
+    checkCardCount()
+    window.addEventListener('resize', checkCardCount)
 }
 
 
