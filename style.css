@@ -33,7 +33,7 @@ body {
     font-family: TBCX, sans-serif;
     font-size: 14px;
     font-weight: 400;
-    line-height: 1.5;
+    line-height: 1.7;
     margin: 0;
     overflow-x: hidden;
 }
@@ -882,8 +882,60 @@ ul {
 .section-personal-banker {
     background-image: url('/assets/personal-banker.png');
 }
+/* Section Rewards */
 
+.section-rewards .card {
+    flex-direction: row;
+    grid-column-gap: 0;
+    padding: 28px;
+    background-color: rgb(255 255 255);
+    border: none;
+}
+.section-rewards .slider-card-description {
+    padding: 0;
+    gap: 16px;
+}
+.rewards-logo {
+    height: 52px;
+    display: flex;
+}
+.rewards-logo img {
+    height: 100%;
+    object-fit: contain;
+}
+.section-rewards .card-title {
+    line-height: 30px;
+}
+.section-rewards  {
+    font-family: 'TbcRegular', 'sans-serif';
+    font-size: 14px;
+}
+
+@media (min-width: 768px) {
+    .section-rewards .slider-card-description {
+        gap: 24px;
+    }
+}
 /* Footer */
+.footer-padding-top {
+    padding-top: 36px;
+}
+@media (min-width: 480px) {
+    .footer-padding-top {
+        padding-top: 40px;
+    }
+}
+@media (min-width: 768px) {
+    .footer-padding-top {
+        padding-top: 50px;
+    }
+}
+@media (min-width: 992px) {
+    .footer-padding-top {
+        padding-top: 60px;
+    }
+}
+
 /* Footer Top */
 footer {
     background-color: rgb(255 255 255);
@@ -966,6 +1018,10 @@ footer {
     .footer-top {
         padding: 45px 0 50px;
     }
+    .footer-logo {
+        background-image: url('./assets/tbc-logo-larger-footer.svg');
+        width: 165px;
+    }
 }
 /* footer dropdown  */
 .footer-list-wrapper {
@@ -976,6 +1032,7 @@ footer {
 }
 .footer-list-wrapper .list-item {
     padding: 24px 15px;
+    line-height: 1.5;
 }
 .footer-list-wrapper .nav-list:nth-child(1) {
         border-top: 1px solid #d1d5d6;
@@ -1179,11 +1236,20 @@ footer {
     color: rgb(85, 95, 98);
     cursor: pointer;
 }
+.footer-bottom-logo {
+    height: 32px;
+}
 
 .footer-bottom-logo-wrapper {
     display: flex;
     grid-column-gap: 8px;
     align-items: center;
+}
+@media (min-width: 480px) {
+    .footer-bottom {
+        padding: 32px 0;
+        gap: 32px;
+    }
 }
 @media (min-width: 768px) {
     .footer-bottom-wrapper {
