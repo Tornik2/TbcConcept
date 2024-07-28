@@ -1,6 +1,8 @@
 const header = document.getElementById('header-container')
 const menuToggleIcon = document.getElementById('menuToggle')
 const navigation = document.querySelector('.navigation')
+
+//for nav dropdowns
 const dropdowns = document.querySelectorAll('.dropdown-list')
 const navItems = document.querySelectorAll('.nav-list-item')
 
@@ -8,8 +10,12 @@ const navItems = document.querySelectorAll('.nav-list-item')
 const footerItems = document.querySelectorAll('.footer-list-item')
 const footerDropdowns = document.querySelectorAll('.footer-dropdown-list')
 
-const dropdownArrows = document.querySelectorAll('.mobile-dropdown-arrow')
+//invoke functoin
+toggleDropdowns(navItems, dropdowns)
+toggleDropdowns(footerItems, footerDropdowns)
 
+
+//change header background color and toggle navigation when clicked on burgermenu
 menuToggleIcon.addEventListener('click', function() {
     this.classList.toggle('active');
     navigation.classList.toggle('active')
@@ -21,9 +27,8 @@ menuToggleIcon.addEventListener('click', function() {
 });
 
 
-toggleDropdowns(navItems, dropdowns)
-toggleDropdowns(footerItems, footerDropdowns)
 
+//dropdown list functionality
 function toggleDropdowns(elArray, dropdownsArray) {
     elArray.forEach((item, index) => {
         item.addEventListener('click', (e) => {
@@ -53,12 +58,12 @@ document.addEventListener('DOMContentLoaded', () => {
     const appStoreImage = document.querySelector('.appstore')
     googlePlayImage.src = base64GooglePlay
     appStoreImage.src = base64AppStore
-
-
 })
+
 // slider padding for 1300> screens
 const sliders = document.querySelectorAll('.slider')
 const sectionHeading = document.querySelector('.section-heading')
+
 function setSliderPadding() {
     sliders.forEach(slider => {
         if(window.innerWidth < 1440) {
@@ -69,12 +74,16 @@ function setSliderPadding() {
         slider.style.paddingRight = '0' 
         }
     })
-    
 }
+setTimeout(() => {
+setSliderPadding()
+}, 0);
 document.addEventListener('DOMContentLoaded', setSliderPadding)
 window.addEventListener('resize', setSliderPadding)
 
-//Bottom Buton menu
+
+//Bottom Buton menu 
+//dynamically toggling transition delay for open and close icons 
 const buttonMenu = document.querySelector('.button-menu')
 const closeBtn = document.querySelector('.close-bottom-menu')
 const openBtn = document.querySelector('.open-bottom-menu')
