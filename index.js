@@ -75,9 +75,7 @@ function setSliderPadding() {
         }
     })
 }
-setTimeout(() => {
-setSliderPadding()
-}, 0);
+
 document.addEventListener('DOMContentLoaded', setSliderPadding)
 window.addEventListener('resize', setSliderPadding)
 
