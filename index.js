@@ -23,7 +23,7 @@ menuToggleIcon.addEventListener('click', function() {
 
 toggleDropdowns(navItems, dropdowns)
 toggleDropdowns(footerItems, footerDropdowns)
-
+console.log(document.querySelector('.scrollable-content'))
 function toggleDropdowns(elArray, dropdownsArray) {
     elArray.forEach((item, index) => {
         item.addEventListener('click', (e) => {
@@ -79,7 +79,7 @@ const buttonMenu = document.querySelector('.button-menu')
 const closeBtn = document.querySelector('.close-bottom-menu')
 const openBtn = document.querySelector('.open-bottom-menu')
 const bottomBtns = document.querySelector('.buttons')
-console.log(openBtn, closeBtn)
+
 buttonMenu.addEventListener('click', () => {
     if (buttonMenu.classList.contains('active')) {
         openBtn.style.transitionDelay = '0.5s';

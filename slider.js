@@ -94,7 +94,6 @@ function sliderFunctionality(sliderContainer, slider, scrollbarThumb, scrollbarC
 
     const handleOnMove = (clientX) => {
         if (slider.dataset.mouseDownAt === '0') return;
-        console.log(slider.dataset.mouseDownAt)
         mouseDelta = parseFloat(slider.dataset.mouseDownAt) - clientX;
         const nextTranslateX = parseFloat(slider.dataset.prevTranslateX) - mouseDelta;
         slider.dataset.translateX = nextTranslateX;
@@ -102,7 +101,6 @@ function sliderFunctionality(sliderContainer, slider, scrollbarThumb, scrollbarC
 
         updateScrollbar(slider.dataset.translateX)
     };
-    console.log(slider.offsetWidth)
     const checkBoundary = (sliderRectRight, sliderContainerRectRight, sliderWidth, sliderContainerWidth) => {
 
         if (parseFloat(slider.dataset.prevTranslateX) > 0) {
