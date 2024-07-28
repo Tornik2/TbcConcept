@@ -712,6 +712,13 @@ ul {
     .cards-wrapper {
         overflow: hidden;
     }
+    .cards-become-concept .card-wrapper .card-image {
+        transition: all 0.5s ease;
+        
+    }
+    .cards-become-concept .card-wrapper:hover .card-image {
+        transform: scale(1.1);
+    }
 }
 
 @media (min-width: 992px) {
@@ -1149,6 +1156,9 @@ footer {
     .footer-list-wrapper .list-item {
         border: none;
         padding: 0;
+    }
+    .footer-list-wrapper .item-content {
+        cursor: default;
     }
     .footer-list-wrapper .nav-list:nth-child(1) {
         border-top: none;

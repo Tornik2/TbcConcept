@@ -50,13 +50,16 @@ function sliderFunctionality(sliderContainer, slider, scrollbarThumb, scrollbarC
 
     const handleOnDown = (clientX) => {
         slider.style.transition = `none`
+        slider.style.cursor = 'grabbing'
         scrollbarThumb.style.transition = `none`
+        
         mouseDelta = 0
         slider.dataset.mouseDownAt = clientX;
     };
 
     const handleOnUp = () => {
         slider.style.transition = `all 0.4s`
+        slider.style.cursor = 'grab'
         scrollbarThumb.style.transition = `all 0.4s`
 
         slider.dataset.mouseDownAt = '0';

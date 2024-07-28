@@ -26,6 +26,7 @@ h3 {
     gap: 15px;
     transition: transform 0.4s ease;
     user-select: none;
+    cursor: grab;
 }
 
 .card {
