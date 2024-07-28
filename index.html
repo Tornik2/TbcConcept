@@ -1,951 +1,749 @@
 <!DOCTYPE html>
 <html lang="en">
-   <head>
-      <meta charset="UTF-8" />
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <link rel="stylesheet" href="slider.css">
-      <link rel="stylesheet" href="style.css" />
-      <link rel="stylesheet" href="hamburger.css" />
-      <title>TBC Concepts</title>
-   </head>
-   <body>
-      <header>
-         <div class="header-placeholder"></div>
-         <div class="container header-container" id="header-container">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="slider.css">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="hamburger.css" />
+    <title>TBC Concepts</title>
+</head>
+
+<body>
+    <header>
+        <div class="header-placeholder"></div>
+        <div class="container header-container" id="header-container">
             <div class="header-wrapper" id="header-wrapper">
-               <!-- tbc logo -->
-               <div class="logo-menu-wrapper">
-                  <a href="#" target="_blank">
-                     <div class="logo"></div>
-                  </a>
-                  <!-- navigation -->
-                  <nav class="navigation">
-                     <ul class="nav-list ">
-                        <div class="nav-list-item-wrapper">
-                           <li class="nav-list-item list-item">
-                              <div class="nav-item-content item-content">
-                                 <span>პროდუქტები</span>
-                                 <img
-                                    src="/assets/mobile-dropdown-arrow.svg"
-                                    alt="mobile mobile-dropdown-arrow"
-                                    class="mobile-dropdown-arrow"
-                                    />
-                              </div>
-                           </li>
-                           <ul class="dropdown-list">
-                              <li class="nav-dropdown-item">პროდუქტების მიმოხილვა</li>
-                              <li class="nav-dropdown-item">ნაკრები</li>
-                              <li class="nav-dropdown-item">პირადი ბანკირი</li>
-                           </ul>
-                        </div>
-                        <div class="nav-list-item-wrapper">
-                           <li class="nav-list-item list-item">
-                              <div class="nav-item-content item-content">
-                                 <span>შეთავაზებები</span>
-                                 <img
-                                    src="/assets/mobile-dropdown-arrow.svg"
-                                    alt="mobile mobile-dropdown-arrow"
-                                    class="mobile-dropdown-arrow"
-                                    />
-                              </div>
-                           </li>
-                           <ul class="dropdown-list">
-                              <li class="nav-dropdown-item">მიმოხილვა</li>
-                              <li class="nav-dropdown-item">შეთავაზებები</li>
-                              <li class="nav-dropdown-item">ღონისძიებები</li>
-                           </ul>
-                        </div>
-                        <div class="nav-list-item-wrapper">
-                           <li class="nav-list-item list-item">
-                              <div class="nav-item-content item-content">
-                                 <span>კონცეპტის სივრცე</span>
-                                 <img
-                                    src="/assets/mobile-dropdown-arrow.svg"
-                                    alt="mobile mobile-dropdown-arrow"
-                                    class="mobile-dropdown-arrow"
-                                    />
-                              </div>
-                           </li>
-                           <ul class="dropdown-list">
-                              <li class="nav-dropdown-item">მიმოხილვა</li>
-                              <li class="nav-dropdown-item">კაფე</li>
-                              <li class="nav-dropdown-item">ბიბლიოთეკა</li>
-                              <li class="nav-dropdown-item">კონცეპტ ფილიალები</li>
-                           </ul>
-                        </div>
-                     </ul>
-                     <!-- footer-for-top-navigation -->
-                     <div class="navigation-footer" id="navigation-footer">
-                        <div class="container">
-                           <div class="inside-content">
-                              <div class="footer-main">
-                                 <!-- dropdown list -->
-                                 <div class="footer-list-wrapper"></div>
-                                 <div class="footer-contacts">
-                                    <div class="contact-us">
-                                       <div>
-                                          <h2>დაგვიკავშირდით:</h2>
-                                       </div>
-                                       <div class="contact-ways">
-                                          <div class="tel contact">
-                                             <img src="./assets/telephone.svg" alt="telephone icon" />
-                                             <a href="tel:+1234567890">+995 32 2 27 27 00</a>
-                                          </div>
-                                          <div class="email contact">
-                                             <img src="./assets/email-icon.svg" alt="email icon" />
-                                             <a href="mailto:info@tbcconcept.ge">info@tbcconcept.ge</a>
-                                          </div>
-                                          <div class="location contact">
-                                             <img
-                                                src="./assets/location-icon.svg"
-                                                alt="location icon svg"
-                                                />
-                                             <a href="#">ფილიალები</a>
-                                          </div>
-                                       </div>
+                <!-- tbc logo -->
+                <div class="logo-menu-wrapper">
+                    <a href="#" target="_blank">
+                        <div class="logo"></div>
+                    </a>
+                    <!-- navigation -->
+                    <nav class="navigation">
+                        <ul class="nav-list ">
+                            <div class="nav-list-item-wrapper">
+                                <li class="nav-list-item list-item">
+                                    <div class="nav-item-content item-content">
+                                        <span>პროდუქტები</span>
+                                        <img src="/assets/mobile-dropdown-arrow.svg" alt="mobile mobile-dropdown-arrow" class="mobile-dropdown-arrow" />
                                     </div>
-                                    <div class="social">
-                                       <h2>სოციალური ქსელები</h2>
-                                       <div class="social-icons">
-                                          <div class="social-icon">
-                                             <svg
-                                                width="17"
-                                                height="16"
-                                                viewBox="0 0 17 16"
-                                                fill="currentColor"
-                                                xmlns="http://www.w3.org/2000/svg"
-                                                >
-                                                <g clip-path="url(#clip0_167_7547)">
-                                                   <path
-                                                      d="M9.83464 9.00163H11.5013L12.168 6.33496H9.83464V5.00163C9.83464 4.31496 9.83464 3.66829 11.168 3.66829H12.168V1.42829C11.9506 1.39963 11.13 1.33496 10.2633 1.33496C8.4533 1.33496 7.16797 2.43963 7.16797 4.46829V6.33496H5.16797V9.00163H7.16797V14.6683H9.83464V9.00163Z"
-                                                      ></path>
-                                                </g>
-                                                <defs>
-                                                   <clipPath id="clip0_167_7547">
-                                                      <rect
-                                                         width="16"
-                                                         height="16"
-                                                         fill="white"
-                                                         transform="translate(0.5 0.000976562)"
-                                                         ></rect>
-                                                   </clipPath>
-                                                </defs>
-                                             </svg>
-                                          </div>
-                                          <div class="social-icon">
-                                             <svg
-                                                width="17"
-                                                height="16"
-                                                viewBox="0 0 17 16"
-                                                fill="currentColor"
-                                                xmlns="http://www.w3.org/2000/svg"
-                                                class="bi bi-instagram"
-                                                >
-                                                <path
-                                                   d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"
-                                                   ></path>
-                                             </svg>
-                                          </div>
-                                       </div>
+                                </li>
+                                <ul class="dropdown-list">
+                                    <li class="nav-dropdown-item">პროდუქტების მიმოხილვა</li>
+                                    <li class="nav-dropdown-item">ნაკრები</li>
+                                    <li class="nav-dropdown-item">პირადი ბანკირი</li>
+                                </ul>
+                            </div>
+                            <div class="nav-list-item-wrapper">
+                                <li class="nav-list-item list-item">
+                                    <div class="nav-item-content item-content">
+                                        <span>შეთავაზებები</span>
+                                        <img src="/assets/mobile-dropdown-arrow.svg" alt="mobile mobile-dropdown-arrow" class="mobile-dropdown-arrow" />
                                     </div>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                        <!-- footer bottom -->
-                        <div class="footer-bottom-wrapper">
-                           <div class="container">
-                              <div class="inside-content">
-                                 <div class="footer-bottom">
-                                    <div class="footer-bottom-links">
-                                       <span>კონფიდენციალურობა</span>
-                                       <span>წესები და პირობები</span>
+                                </li>
+                                <ul class="dropdown-list">
+                                    <li class="nav-dropdown-item">მიმოხილვა</li>
+                                    <li class="nav-dropdown-item">შეთავაზებები</li>
+                                    <li class="nav-dropdown-item">ღონისძიებები</li>
+                                </ul>
+                            </div>
+                            <div class="nav-list-item-wrapper">
+                                <li class="nav-list-item list-item">
+                                    <div class="nav-item-content item-content">
+                                        <span>კონცეპტის სივრცე</span>
+                                        <img src="/assets/mobile-dropdown-arrow.svg" alt="mobile mobile-dropdown-arrow" class="mobile-dropdown-arrow" />
                                     </div>
-                                    <div class="footer-bottom-logo-wrapper">
-                                       <div class="footer-bottom-logo">
-                                          <img src="./assets/tbc-logo-footer-bottom.svg" alt="tbc logo" />
-                                       </div>
-                                       <p>2024 ყველა უფლება დაცულია</p>
+                                </li>
+                                <ul class="dropdown-list">
+                                    <li class="nav-dropdown-item">მიმოხილვა</li>
+                                    <li class="nav-dropdown-item">კაფე</li>
+                                    <li class="nav-dropdown-item">ბიბლიოთეკა</li>
+                                    <li class="nav-dropdown-item">კონცეპტ ფილიალები</li>
+                                </ul>
+                            </div>
+                        </ul>
+                        <!-- footer-for-top-navigation -->
+                        <div class="navigation-footer" id="navigation-footer">
+                            <div class="container">
+                                <div class="inside-content">
+                                    <div class="footer-main">
+                                        <!-- dropdown list -->
+                                        <div class="footer-list-wrapper"></div>
+                                        <div class="footer-contacts">
+                                            <div class="contact-us">
+                                                <div>
+                                                    <h2>დაგვიკავშირდით:</h2>
+                                                </div>
+                                                <div class="contact-ways">
+                                                    <div class="tel contact">
+                                                        <img src="./assets/telephone.svg" alt="telephone icon" />
+                                                        <a href="tel:+1234567890">+995 32 2 27 27 00</a>
+                                                    </div>
+                                                    <div class="email contact">
+                                                        <img src="./assets/email-icon.svg" alt="email icon" />
+                                                        <a href="mailto:info@tbcconcept.ge">info@tbcconcept.ge</a>
+                                                    </div>
+                                                    <div class="location contact">
+                                                        <img src="./assets/location-icon.svg" alt="location icon svg" />
+                                                        <a href="#">ფილიალები</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="social">
+                                                <h2>სოციალური ქსელები</h2>
+                                                <div class="social-icons">
+                                                    <div class="social-icon">
+                                                        <svg width="17" height="16" viewBox="0 0 17 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                                            <g clip-path="url(#clip0_167_7547)">
+                                                                <path d="M9.83464 9.00163H11.5013L12.168 6.33496H9.83464V5.00163C9.83464 4.31496 9.83464 3.66829 11.168 3.66829H12.168V1.42829C11.9506 1.39963 11.13 1.33496 10.2633 1.33496C8.4533 1.33496 7.16797 2.43963 7.16797 4.46829V6.33496H5.16797V9.00163H7.16797V14.6683H9.83464V9.00163Z"></path>
+                                                            </g>
+                                                            <defs>
+                                                                <clipPath id="clip0_167_7547">
+                                                                    <rect width="16" height="16" fill="white" transform="translate(0.5 0.000976562)"></rect>
+                                                                </clipPath>
+                                                            </defs>
+                                                        </svg>
+                                                    </div>
+                                                    <div class="social-icon">
+                                                        <svg width="17" height="16" viewBox="0 0 17 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg" class="bi bi-instagram">
+                                                            <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"></path>
+                                                        </svg>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
-                                 </div>
-                              </div>
-                           </div>
+                                </div>
+                            </div>
+                            <!-- footer bottom -->
+                            <div class="footer-bottom-wrapper">
+                                <div class="container">
+                                    <div class="inside-content">
+                                        <div class="footer-bottom">
+                                            <div class="footer-bottom-links">
+                                                <span>კონფიდენციალურობა</span>
+                                                <span>წესები და პირობები</span>
+                                            </div>
+                                            <div class="footer-bottom-logo-wrapper">
+                                                <div class="footer-bottom-logo">
+                                                    <img src="./assets/tbc-logo-footer-bottom.svg" alt="tbc logo" />
+                                                </div>
+                                                <p>2024 ყველა უფლება დაცულია</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        </footer>
-                     </div>
-                  </nav>
-               </div>
-               <div class="header-right-side">
-                  <div class="search">
-                     <svg
-                        data-v-562b0aec=""
-                        width="24"
-                        height="24"
-                        viewbox="0 0 24 24"
-                        fill="rgb(85, 95, 98)"
-                        xmlns="http://www.w3.org/2000/svg"
-                        >
-                        <path
-                           data-v-562b0aec=""
-                           d="M21.7 20.3L15.5 14C16.5 12.7 17 11.2 17 9.5C17 5.4 13.6 2 9.5 2C5.4 2 2 5.4 2 9.5C2 13.6 5.4 17 9.5 17C11.2 17 12.8 16.4 14 15.5L20.2 21.7C20.4 21.9 20.7 22 20.9 22C21.1 22 21.4 21.9 21.6 21.7C22.1 21.3 22.1 20.7 21.7 20.3ZM4 9.5C4 6.5 6.5 4 9.5 4C12.5 4 15 6.5 15 9.5C15 12.5 12.5 15 9.5 15C6.5 15 4 12.5 4 9.5Z"
-                           ></path>
-                     </svg>
-                  </div>
-                  <a href="" target="_blank" class="buy-products-link">
-                     <svg
-                        class="blue-arrow-svg"
-                        data-v-562b0aec=""
-                        width="16"
-                        height="16"
-                        viewbox="0 0 16 16"
-                        fill="rgb(24, 44, 192)"
-                        xmlns="http://www.w3.org/2000/svg"
-                        >
-                        <path
-                           data-v-562b0aec=""
-                           d="M9.7987 2.86675L14.4654 7.53341C14.732 7.80008 14.732 8.20008 14.4654 8.46675L9.7987 13.1334C9.53203 13.4001 9.13203 13.4001 8.86537 13.1334C8.5987 12.8667 8.5987 12.4667 8.86537 12.2001L12.3987 8.66675H1.9987C1.5987 8.66675 1.33203 8.40008 1.33203 8.00008C1.33203 7.60008 1.5987 7.33341 1.9987 7.33341H12.3987L8.86537 3.80008C8.73203 3.66675 8.66536 3.53341 8.66536 3.33341C8.66536 3.13341 8.73203 3.00008 8.86537 2.86675C9.13203 2.60008 9.53203 2.60008 9.7987 2.86675Z"
-                           ></path>
-                     </svg>
-                     <span class="buy-products-text">გამოიწერეთ ნაკრები</span>
-                  </a>
-                  <!-- //language change icon -->
-                  <div class="language-change">
-                     <svg
-                        data-v-174d8ed1=""
-                        width="16"
-                        height="16"
-                        viewbox="0 0 16 16"
-                        fill="currentColor"
-                        xmlns="http://www.w3.org/2000/svg"
-                        >
-                        <path
-                           data-v-174d8ed1=""
-                           d="M14.6654 7.99992C14.6654 4.32659 11.672 1.33325 7.9987 1.33325C4.32536 1.33325 1.33203 4.32659 1.33203 7.99992C1.33203 11.6733 4.32536 14.6666 7.9987 14.6666C11.672 14.6666 14.6654 11.6733 14.6654 7.99992ZM13.2854 7.33325H11.3187C11.2587 5.83325 10.972 4.37325 10.4587 3.26659C11.9787 4.05992 13.072 5.55992 13.292 7.33325H13.2854ZM7.9987 13.3333C6.9787 13.3333 6.1387 11.2999 6.0187 8.66659H9.98536C9.86536 11.2999 9.02536 13.3333 8.00536 13.3333H7.9987ZM6.0187 7.33325C6.1387 4.69992 6.9787 2.66659 7.9987 2.66659C9.0187 2.66659 9.8587 4.69992 9.9787 7.33325H6.01203H6.0187ZM5.54536 3.26659C5.02536 4.37325 4.74536 5.82659 4.68536 7.33325H2.7187C2.9387 5.55992 4.03203 4.05992 5.55203 3.26659H5.54536ZM2.71203 8.66659H4.6787C4.7387 10.1666 5.02536 11.6266 5.5387 12.7333C4.0187 11.9399 2.92536 10.4399 2.70536 8.66659H2.71203ZM10.452 12.7333C10.972 11.6266 11.252 10.1733 11.312 8.66659H13.2787C13.0587 10.4399 11.9654 11.9399 10.4454 12.7333H10.452Z"
-                           ></path>
-                     </svg>
-                     <div class="language">ქარ</div>
-                     <div class="language-list">
-                        <p>Eng</p>
-                     </div>
-                  </div>
-                  <div class="header_menu-button" id="menuToggle">
-                     <div class="header_menu-button-line-1"></div>
-                     <div class="header_menu-button-line-2"></div>
-                     <div class="header_menu-button-line-3"></div>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </header>
-      <!-- MAIN -->
-      <div class="scrollable-content">
-      <main>
-         <div class="breadcrums-container container">
-            <div class="inside-content">
-               <div class="breadcrums">
-                  <img
-                     src="/assets/chevron-left.85606530.svg"
-                     alt="breadcrums-arrow"
-                     class="breadcrums-arrow"
-                     />
-                  <p class="breadcrums-main-page">მთავარი</p>
-               </div>
-            </div>
-         </div>
-         <!-- hero section -->
-         <section class="section-main-wrapper">
-            <div
-               class="section-main-banner section-main-tbc-concept-background inside-content"
-               >
-               <div class="main-banner-content container" id="main-banner-content">
-                  <h1>თიბისი კონცეპტი</h1>
-                  <div class="spacer"></div>
-                  <p>
-                     პერსონალური საბანკო მომსახურება, მორგებული თქვენს საჭიროებებსა და
-                     ინტერესებზე
-                  </p>
-                  <div class="button">
-                     <svg
-                        class="blue-arrow-svg"
-                        data-v-562b0aec=""
-                        width="16"
-                        height="16"
-                        viewbox="0 0 16 16"
-                        fill="rgb(255, 255, 255)"
-                        xmlns="http://www.w3.org/2000/svg"
-                        >
-                        <path
-                           data-v-562b0aec=""
-                           d="M9.7987 2.86675L14.4654 7.53341C14.732 7.80008 14.732 8.20008 14.4654 8.46675L9.7987 13.1334C9.53203 13.4001 9.13203 13.4001 8.86537 13.1334C8.5987 12.8667 8.5987 12.4667 8.86537 12.2001L12.3987 8.66675H1.9987C1.5987 8.66675 1.33203 8.40008 1.33203 8.00008C1.33203 7.60008 1.5987 7.33341 1.9987 7.33341H12.3987L8.86537 3.80008C8.73203 3.66675 8.66536 3.53341 8.66536 3.33341C8.66536 3.13341 8.73203 3.00008 8.86537 2.86675C9.13203 2.60008 9.53203 2.60008 9.7987 2.86675Z"
-                           ></path>
-                     </svg>
-                     გამოიწერეთ
-                  </div>
-               </div>
-            </div>
-         </section>
-         <section class="section-big-message">
-            <div class="container">
-               <div class="inside-content">
-                  <p class="big-message-text">
-                     გამოიწერეთ თიბისი კონცეპტის ნაკრები და ისარგებლეთ როგორც საბანკო,
-                     ისე არასაბანკო უპირატესობებით.
-                  </p>
-               </div>
-            </div>
-         </section>
-         <section class="section-become-concept">
-            <div class="heading-wrapper container">
-               <div class="inside-content">
-                  <h2 class="section-heading">შეარჩიეთ ნაკრები</h2>
-               </div>
-            </div>
-            <div class="cards-wrapper">
-               <div class="container">
-                  <div class="inside-content">
-                     <div class="cards-become-concept">
-                        <div class="card-wrapper">
-                           <div class="card-image">
-                              <img src="/assets/concept-card1-cifruli.png" alt="" />
-                           </div>
-                           <div class="card-description">
-                              <h3>ციფრული</h3>
-                              <div class="arrow-link">
-                                 <svg
-                                    class="blue-arrow-svg"
-                                    data-v-562b0aec=""
-                                    width="16"
-                                    height="16"
-                                    viewbox="0 0 16 16"
-                                    fill="rgb(255, 255, 255)"
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    >
-                                    <path
-                                       data-v-562b0aec=""
-                                       d="M9.7987 2.86675L14.4654 7.53341C14.732 7.80008 14.732 8.20008 14.4654 8.46675L9.7987 13.1334C9.53203 13.4001 9.13203 13.4001 8.86537 13.1334C8.5987 12.8667 8.5987 12.4667 8.86537 12.2001L12.3987 8.66675H1.9987C1.5987 8.66675 1.33203 8.40008 1.33203 8.00008C1.33203 7.60008 1.5987 7.33341 1.9987 7.33341H12.3987L8.86537 3.80008C8.73203 3.66675 8.66536 3.53341 8.66536 3.33341C8.66536 3.13341 8.73203 3.00008 8.86537 2.86675C9.13203 2.60008 9.53203 2.60008 9.7987 2.86675Z"
-                                       ></path>
-                                 </svg>
-                                 <a href="#" class="button-text">იხილეთ მეტი</a>
-                              </div>
-                           </div>
-                        </div>
-                        <div class="card-wrapper">
-                           <div class="card-image">
-                              <img src="/assets/concept-card2-360.png" alt="" />
-                           </div>
-                           <div class="card-description">
-                              <h3>360</h3>
-                              <div class="arrow-link">
-                                 <svg
-                                    class="blue-arrow-svg"
-                                    data-v-562b0aec=""
-                                    width="16"
-                                    height="16"
-                                    viewbox="0 0 16 16"
-                                    fill="rgb(255, 255, 255)"
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    >
-                                    <path
-                                       data-v-562b0aec=""
-                                       d="M9.7987 2.86675L14.4654 7.53341C14.732 7.80008 14.732 8.20008 14.4654 8.46675L9.7987 13.1334C9.53203 13.4001 9.13203 13.4001 8.86537 13.1334C8.5987 12.8667 8.5987 12.4667 8.86537 12.2001L12.3987 8.66675H1.9987C1.5987 8.66675 1.33203 8.40008 1.33203 8.00008C1.33203 7.60008 1.5987 7.33341 1.9987 7.33341H12.3987L8.86537 3.80008C8.73203 3.66675 8.66536 3.53341 8.66536 3.33341C8.66536 3.13341 8.73203 3.00008 8.86537 2.86675C9.13203 2.60008 9.53203 2.60008 9.7987 2.86675Z"
-                                       ></path>
-                                 </svg>
-                                 <a href="#" class="button-text">იხილეთ მეტი</a>
-                              </div>
-                           </div>
-                        </div>
-                        <div class="card-wrapper">
-                           <div class="card-image">
-                              <img src="/assets/concept-card3-premium.png" alt="" />
-                           </div>
-                           <div class="card-description">
-                              <h3>პრემიუმი</h3>
-                              <div class="arrow-link">
-                                 <svg
-                                    class="blue-arrow-svg"
-                                    data-v-562b0aec=""
-                                    width="16"
-                                    height="16"
-                                    viewbox="0 0 16 16"
-                                    fill="rgb(255, 255, 255)"
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    >
-                                    <path
-                                       data-v-562b0aec=""
-                                       d="M9.7987 2.86675L14.4654 7.53341C14.732 7.80008 14.732 8.20008 14.4654 8.46675L9.7987 13.1334C9.53203 13.4001 9.13203 13.4001 8.86537 13.1334C8.5987 12.8667 8.5987 12.4667 8.86537 12.2001L12.3987 8.66675H1.9987C1.5987 8.66675 1.33203 8.40008 1.33203 8.00008C1.33203 7.60008 1.5987 7.33341 1.9987 7.33341H12.3987L8.86537 3.80008C8.73203 3.66675 8.66536 3.53341 8.66536 3.33341C8.66536 3.13341 8.73203 3.00008 8.86537 2.86675C9.13203 2.60008 9.53203 2.60008 9.7987 2.86675Z"
-                                       ></path>
-                                 </svg>
-                                 <a href="#" class="button-text">იხილეთ მეტი</a>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </section>
-         <!-- Numbers Section -->
-         <section class="section-numbers section-padding-top-bottom">
-            <div class="container">
-               <div class="inside-content">
-                  <div class="numbers-wrapper">
-                     <div class="numbers-item">
-                        <h2 class="numbers-items-number">94 750</h2>
-                        <p>მომხმარებელი</p>
-                     </div>
-                     <div class="numbers-item">
-                        <h2 class="numbers-items-number">150+</h2>
-                        <p>ღონისძიება</p>
-                     </div>
-                     <div class="numbers-item">
-                        <h2 class="numbers-items-number">130+</h2>
-                        <p>შეთავაზება</p>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </section>
-         <!-- Offers Section -->
-         <section class="section-offers section-padding-top-bottom">
-            <div class="container">
-               <div class="inside-content">
-                  <div class="section-offers-heading">
-                     <h2 class="section-heading">შეთავაზებები</h2>
-                     <a href="" target="_blank" class="buy-products-link">
-                        <svg
-                           class="blue-arrow-svg"
-                           data-v-562b0aec=""
-                           width="16"
-                           height="16"
-                           viewbox="0 0 16 16"
-                           fill="rgb(24, 44, 192)"
-                           xmlns="http://www.w3.org/2000/svg"
-                           >
-                           <path
-                              data-v-562b0aec=""
-                              d="M9.7987 2.86675L14.4654 7.53341C14.732 7.80008 14.732 8.20008 14.4654 8.46675L9.7987 13.1334C9.53203 13.4001 9.13203 13.4001 8.86537 13.1334C8.5987 12.8667 8.5987 12.4667 8.86537 12.2001L12.3987 8.66675H1.9987C1.5987 8.66675 1.33203 8.40008 1.33203 8.00008C1.33203 7.60008 1.5987 7.33341 1.9987 7.33341H12.3987L8.86537 3.80008C8.73203 3.66675 8.66536 3.53341 8.66536 3.33341C8.66536 3.13341 8.73203 3.00008 8.86537 2.86675C9.13203 2.60008 9.53203 2.60008 9.7987 2.86675Z"
-                              ></path>
+                    </nav>
+                </div>
+                <div class="header-right-side">
+                    <div class="search">
+                        <svg data-v-562b0aec="" width="24" height="24" viewbox="0 0 24 24" fill="rgb(85, 95, 98)" xmlns="http://www.w3.org/2000/svg">
+                            <path data-v-562b0aec="" d="M21.7 20.3L15.5 14C16.5 12.7 17 11.2 17 9.5C17 5.4 13.6 2 9.5 2C5.4 2 2 5.4 2 9.5C2 13.6 5.4 17 9.5 17C11.2 17 12.8 16.4 14 15.5L20.2 21.7C20.4 21.9 20.7 22 20.9 22C21.1 22 21.4 21.9 21.6 21.7C22.1 21.3 22.1 20.7 21.7 20.3ZM4 9.5C4 6.5 6.5 4 9.5 4C12.5 4 15 6.5 15 9.5C15 12.5 12.5 15 9.5 15C6.5 15 4 12.5 4 9.5Z"></path>
                         </svg>
-                        <span class="buy-products-text">ყველა შეთავაზება</span>
-                     </a>
-                  </div>
-               </div>
-            </div>
-            <div class="slider-container">
-               <div class="slider">
-                  <div class="card">
-                     <div class="photo">
-                        <img
-                           src="/assets/slide1-jazz-fest-beach.jpg"
-                           alt="Jazz Festival"
-                           class="slider-card-image"
-                           />
-                        <img src="/assets/tegeta-logo.png" alt="" class="card-logo" />
-                     </div>
-                     <div class="slider-card-description">
-                        <div class="card-category">
-                           <p class="">ავტო</p>
-                           <p class="">თეგეტა მოტორსი</p>
+                    </div>
+                    <a href="" target="_blank" class="buy-products-link">
+                        <svg class="blue-arrow-svg" data-v-562b0aec="" width="16" height="16" viewbox="0 0 16 16" fill="rgb(24, 44, 192)" xmlns="http://www.w3.org/2000/svg">
+                            <path data-v-562b0aec="" d="M9.7987 2.86675L14.4654 7.53341C14.732 7.80008 14.732 8.20008 14.4654 8.46675L9.7987 13.1334C9.53203 13.4001 9.13203 13.4001 8.86537 13.1334C8.5987 12.8667 8.5987 12.4667 8.86537 12.2001L12.3987 8.66675H1.9987C1.5987 8.66675 1.33203 8.40008 1.33203 8.00008C1.33203 7.60008 1.5987 7.33341 1.9987 7.33341H12.3987L8.86537 3.80008C8.73203 3.66675 8.66536 3.53341 8.66536 3.33341C8.66536 3.13341 8.73203 3.00008 8.86537 2.86675C9.13203 2.60008 9.53203 2.60008 9.7987 2.86675Z"></path>
+                        </svg>
+                        <span class="buy-products-text">გამოიწერეთ ნაკრები</span>
+                    </a>
+                    <!-- //language change icon -->
+                    <div class="language-change">
+                        <svg data-v-174d8ed1="" width="16" height="16" viewbox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path data-v-174d8ed1="" d="M14.6654 7.99992C14.6654 4.32659 11.672 1.33325 7.9987 1.33325C4.32536 1.33325 1.33203 4.32659 1.33203 7.99992C1.33203 11.6733 4.32536 14.6666 7.9987 14.6666C11.672 14.6666 14.6654 11.6733 14.6654 7.99992ZM13.2854 7.33325H11.3187C11.2587 5.83325 10.972 4.37325 10.4587 3.26659C11.9787 4.05992 13.072 5.55992 13.292 7.33325H13.2854ZM7.9987 13.3333C6.9787 13.3333 6.1387 11.2999 6.0187 8.66659H9.98536C9.86536 11.2999 9.02536 13.3333 8.00536 13.3333H7.9987ZM6.0187 7.33325C6.1387 4.69992 6.9787 2.66659 7.9987 2.66659C9.0187 2.66659 9.8587 4.69992 9.9787 7.33325H6.01203H6.0187ZM5.54536 3.26659C5.02536 4.37325 4.74536 5.82659 4.68536 7.33325H2.7187C2.9387 5.55992 4.03203 4.05992 5.55203 3.26659H5.54536ZM2.71203 8.66659H4.6787C4.7387 10.1666 5.02536 11.6266 5.5387 12.7333C4.0187 11.9399 2.92536 10.4399 2.70536 8.66659H2.71203ZM10.452 12.7333C10.972 11.6266 11.252 10.1733 11.312 8.66659H13.2787C13.0587 10.4399 11.9654 11.9399 10.4454 12.7333H10.452Z"></path>
+                        </svg>
+                        <div class="language">ქარ</div>
+                        <div class="language-list">
+                            <p>Eng</p>
                         </div>
-                        <h3 class="card-title" id="card-title">
+                    </div>
+                    <div class="header_menu-button" id="menuToggle">
+                        <div class="header_menu-button-line-1"></div>
+                        <div class="header_menu-button-line-2"></div>
+                        <div class="header_menu-button-line-3"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- MAIN -->
+    <div class="scrollable-content">
+        <main>
+            <div class="breadcrums-container container">
+                <div class="inside-content">
+                    <div class="breadcrums">
+                        <img src="/assets/chevron-left.85606530.svg" alt="breadcrums-arrow" class="breadcrums-arrow" />
+                        <p class="breadcrums-main-page">მთავარი</p>
+                    </div>
+                </div>
+            </div>
+            <!-- hero section -->
+            <section class="section-main-wrapper">
+                <div class="section-main-banner section-main-tbc-concept-background inside-content">
+                    <div class="main-banner-content container" id="main-banner-content">
+                        <h1>თიბისი კონცეპტი</h1>
+                        <div class="spacer"></div>
+                        <p>
+                            პერსონალური საბანკო მომსახურება, მორგებული თქვენს საჭიროებებსა და ინტერესებზე
+                        </p>
+                        <div class="button">
+                            <svg class="blue-arrow-svg" data-v-562b0aec="" width="16" height="16" viewbox="0 0 16 16" fill="rgb(255, 255, 255)" xmlns="http://www.w3.org/2000/svg">
+                                <path data-v-562b0aec="" d="M9.7987 2.86675L14.4654 7.53341C14.732 7.80008 14.732 8.20008 14.4654 8.46675L9.7987 13.1334C9.53203 13.4001 9.13203 13.4001 8.86537 13.1334C8.5987 12.8667 8.5987 12.4667 8.86537 12.2001L12.3987 8.66675H1.9987C1.5987 8.66675 1.33203 8.40008 1.33203 8.00008C1.33203 7.60008 1.5987 7.33341 1.9987 7.33341H12.3987L8.86537 3.80008C8.73203 3.66675 8.66536 3.53341 8.66536 3.33341C8.66536 3.13341 8.73203 3.00008 8.86537 2.86675C9.13203 2.60008 9.53203 2.60008 9.7987 2.86675Z"></path>
+                            </svg>
+                            გამოიწერეთ
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="section-big-message">
+                <div class="container">
+                    <div class="inside-content">
+                        <p class="big-message-text">
+                            გამოიწერეთ თიბისი კონცეპტის ნაკრები და ისარგებლეთ როგორც საბანკო, ისე არასაბანკო უპირატესობებით.
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <section class="section-become-concept">
+                <div class="heading-wrapper container">
+                    <div class="inside-content">
+                        <h2 class="section-heading">შეარჩიეთ ნაკრები</h2>
+                    </div>
+                </div>
+                <div class="cards-wrapper">
+                    <div class="container">
+                        <div class="inside-content">
+                            <div class="cards-become-concept">
+                                <div class="card-wrapper">
+                                    <div class="card-image">
+                                        <img src="/assets/concept-card1-cifruli.png" alt="" />
+                                    </div>
+                                    <div class="card-description">
+                                        <h3>ციფრული</h3>
+                                        <div class="arrow-link">
+                                            <svg class="blue-arrow-svg" data-v-562b0aec="" width="16" height="16" viewbox="0 0 16 16" fill="rgb(255, 255, 255)" xmlns="http://www.w3.org/2000/svg">
+                                                <path data-v-562b0aec="" d="M9.7987 2.86675L14.4654 7.53341C14.732 7.80008 14.732 8.20008 14.4654 8.46675L9.7987 13.1334C9.53203 13.4001 9.13203 13.4001 8.86537 13.1334C8.5987 12.8667 8.5987 12.4667 8.86537 12.2001L12.3987 8.66675H1.9987C1.5987 8.66675 1.33203 8.40008 1.33203 8.00008C1.33203 7.60008 1.5987 7.33341 1.9987 7.33341H12.3987L8.86537 3.80008C8.73203 3.66675 8.66536 3.53341 8.66536 3.33341C8.66536 3.13341 8.73203 3.00008 8.86537 2.86675C9.13203 2.60008 9.53203 2.60008 9.7987 2.86675Z"></path>
+                                            </svg>
+                                            <a href="#" class="button-text">იხილეთ მეტი</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-wrapper">
+                                    <div class="card-image">
+                                        <img src="/assets/concept-card2-360.png" alt="" />
+                                    </div>
+                                    <div class="card-description">
+                                        <h3>360</h3>
+                                        <div class="arrow-link">
+                                            <svg class="blue-arrow-svg" data-v-562b0aec="" width="16" height="16" viewbox="0 0 16 16" fill="rgb(255, 255, 255)" xmlns="http://www.w3.org/2000/svg">
+                                                <path data-v-562b0aec="" d="M9.7987 2.86675L14.4654 7.53341C14.732 7.80008 14.732 8.20008 14.4654 8.46675L9.7987 13.1334C9.53203 13.4001 9.13203 13.4001 8.86537 13.1334C8.5987 12.8667 8.5987 12.4667 8.86537 12.2001L12.3987 8.66675H1.9987C1.5987 8.66675 1.33203 8.40008 1.33203 8.00008C1.33203 7.60008 1.5987 7.33341 1.9987 7.33341H12.3987L8.86537 3.80008C8.73203 3.66675 8.66536 3.53341 8.66536 3.33341C8.66536 3.13341 8.73203 3.00008 8.86537 2.86675C9.13203 2.60008 9.53203 2.60008 9.7987 2.86675Z"></path>
+                                            </svg>
+                                            <a href="#" class="button-text">იხილეთ მეტი</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-wrapper">
+                                    <div class="card-image">
+                                        <img src="/assets/concept-card3-premium.png" alt="" />
+                                    </div>
+                                    <div class="card-description">
+                                        <h3>პრემიუმი</h3>
+                                        <div class="arrow-link">
+                                            <svg class="blue-arrow-svg" data-v-562b0aec="" width="16" height="16" viewbox="0 0 16 16" fill="rgb(255, 255, 255)" xmlns="http://www.w3.org/2000/svg">
+                                                <path data-v-562b0aec="" d="M9.7987 2.86675L14.4654 7.53341C14.732 7.80008 14.732 8.20008 14.4654 8.46675L9.7987 13.1334C9.53203 13.4001 9.13203 13.4001 8.86537 13.1334C8.5987 12.8667 8.5987 12.4667 8.86537 12.2001L12.3987 8.66675H1.9987C1.5987 8.66675 1.33203 8.40008 1.33203 8.00008C1.33203 7.60008 1.5987 7.33341 1.9987 7.33341H12.3987L8.86537 3.80008C8.73203 3.66675 8.66536 3.53341 8.66536 3.33341C8.66536 3.13341 8.73203 3.00008 8.86537 2.86675C9.13203 2.60008 9.53203 2.60008 9.7987 2.86675Z"></path>
+                                            </svg>
+                                            <a href="#" class="button-text">იხილეთ მეტი</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Numbers Section -->
+            <section class="section-numbers section-padding-top-bottom">
+                <div class="container">
+                    <div class="inside-content">
+                        <div class="numbers-wrapper">
+                            <div class="numbers-item">
+                                <h2 class="numbers-items-number">94 750</h2>
+                                <p>მომხმარებელი</p>
+                            </div>
+                            <div class="numbers-item">
+                                <h2 class="numbers-items-number">150+</h2>
+                                <p>ღონისძიება</p>
+                            </div>
+                            <div class="numbers-item">
+                                <h2 class="numbers-items-number">130+</h2>
+                                <p>შეთავაზება</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Offers Section -->
+            <section class="section-offers section-padding-top-bottom">
+                <div class="container">
+                    <div class="inside-content">
+                        <div class="section-offers-heading">
+                            <h2 class="section-heading">შეთავაზებები</h2>
+                            <a href="" target="_blank" class="buy-products-link">
+                                <svg class="blue-arrow-svg" data-v-562b0aec="" width="16" height="16" viewbox="0 0 16 16" fill="rgb(24, 44, 192)" xmlns="http://www.w3.org/2000/svg">
+                                    <path data-v-562b0aec="" d="M9.7987 2.86675L14.4654 7.53341C14.732 7.80008 14.732 8.20008 14.4654 8.46675L9.7987 13.1334C9.53203 13.4001 9.13203 13.4001 8.86537 13.1334C8.5987 12.8667 8.5987 12.4667 8.86537 12.2001L12.3987 8.66675H1.9987C1.5987 8.66675 1.33203 8.40008 1.33203 8.00008C1.33203 7.60008 1.5987 7.33341 1.9987 7.33341H12.3987L8.86537 3.80008C8.73203 3.66675 8.66536 3.53341 8.66536 3.33341C8.66536 3.13341 8.73203 3.00008 8.86537 2.86675C9.13203 2.60008 9.53203 2.60008 9.7987 2.86675Z"></path>
+                                </svg>
+                                <span class="buy-products-text">ყველა შეთავაზება</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider-container">
+                    <div class="slider">
+                        <div class="card">
+                            <div class="photo">
+                                <img src="/assets/slide1-jazz-fest-beach.jpg" alt="Jazz Festival" class="slider-card-image" />
+                                <img src="/assets/tegeta-logo.png" alt="" class="card-logo" />
+                            </div>
+                            <div class="slider-card-description">
+                                <div class="card-category">
+                                    <p class="">ავტო</p>
+                                    <p class="">თეგეტა მოტორსი</p>
+                                </div>
+                                <h3 class="card-title" id="card-title">
                            IVERIA BEACH - დაიბრუნეთ 30%
                         </h3>
-                     </div>
-                  </div>
-                  <div class="card">
-                     <div class="photo">
-                        <img
-                           src="/assets/slide2-Tegeta-Auto.png"
-                           alt="Tegeta"
-                           class="slider-card-image"
-                           />
-                        <img src="/assets/tegeta-logo.png" alt="" class="card-logo" />
-                     </div>
-                     <div class="slider-card-description">
-                        <div class="card-category">
-                           <p class="">ავტო</p>
-                           <p class="">თეგეტა მოტორსი</p>
+                            </div>
                         </div>
-                        <h3 class="card-title" id="card-title">
+                        <div class="card">
+                            <div class="photo">
+                                <img src="/assets/slide2-Tegeta-Auto.png" alt="Tegeta" class="slider-card-image" />
+                                <img src="/assets/tegeta-logo.png" alt="" class="card-logo" />
+                            </div>
+                            <div class="slider-card-description">
+                                <div class="card-category">
+                                    <p class="">ავტო</p>
+                                    <p class="">თეგეტა მოტორსი</p>
+                                </div>
+                                <h3 class="card-title" id="card-title">
                            თეგეტა მოტორსი - 50% ფასდაკლება
                         </h3>
-                     </div>
-                  </div>
-                  <div class="card">
-                     <div class="photo">
-                        <img
-                           src="/assets/slide-6-tegetabuilding.png"
-                           alt="Tegeta Building"
-                           class="slider-card-image"
-                           />
-                        <img
-                           src="/assets/tegeta-logo.png"
-                           alt="Tegeta logo"
-                           class="card-logo"
-                           />
-                     </div>
-                     <div class="slider-card-description">
-                        <div class="card-category">
-                           <p class="">ავტო</p>
-                           <p class="">ჯაზ ფესტივალის შეთავაზებები</p>
-                           <p class="">თეგეტა მოტორსი</p>
+                            </div>
                         </div>
-                        <h3 class="card-title">თეგეტა მოტორსი - ბათუმი</h3>
-                     </div>
-                  </div>
-                  <div class="card">
-                     <div class="photo">
-                        <img
-                           src="/assets/slide-3-LeMerdienBatumi.png"
-                           alt="Meridien"
-                           class="slider-card-image"
-                           />
-                        <img
-                           src="/assets/meridien logo.png"
-                           alt="მერიდიენის ლოგო"
-                           class="card-logo"
-                           />
-                     </div>
-                     <div class="slider-card-description">
-                        <div class="card-category">
-                           <p class="">დასვენება</p>
-                           <p class="">ვიზა</p>
-                           <p class="">ჯაზ ფესტივალის შეთავაზებები</p>
+                        <div class="card">
+                            <div class="photo">
+                                <img src="/assets/slide-6-tegetabuilding.png" alt="Tegeta Building" class="slider-card-image" />
+                                <img src="/assets/tegeta-logo.png" alt="Tegeta logo" class="card-logo" />
+                            </div>
+                            <div class="slider-card-description">
+                                <div class="card-category">
+                                    <p class="">ავტო</p>
+                                    <p class="">ჯაზ ფესტივალის შეთავაზებები</p>
+                                    <p class="">თეგეტა მოტორსი</p>
+                                </div>
+                                <h3 class="card-title">თეგეტა მოტორსი - ბათუმი</h3>
+                            </div>
                         </div>
-                        <h3 class="card-title">Le Meridien Batumi – 10%-იანი ფასდაკლება</h3>
-                     </div>
-                  </div>
-                  <div class="card">
-                     <div class="photo">
-                        <img
-                           src="/assets/slide-4-coliseum.png"
-                           alt="Colosseum Marina"
-                           class="slider-card-image"
-                           />
-                        <img src="/assets/coliseum-logo.png" alt="" class="card-logo" />
-                     </div>
-                     <div class="slider-card-description">
-                        <div class="card-category">
-                           <p class="">დასვენება</p>
-                           <p class="">ვიზა</p>
-                           <p class="">ჯაზ ფესტივალის შეთავაზებები</p>
+                        <div class="card">
+                            <div class="photo">
+                                <img src="/assets/slide-3-LeMerdienBatumi.png" alt="Meridien" class="slider-card-image" />
+                                <img src="/assets/meridien logo.png" alt="მერიდიენის ლოგო" class="card-logo" />
+                            </div>
+                            <div class="slider-card-description">
+                                <div class="card-category">
+                                    <p class="">დასვენება</p>
+                                    <p class="">ვიზა</p>
+                                    <p class="">ჯაზ ფესტივალის შეთავაზებები</p>
+                                </div>
+                                <h3 class="card-title">Le Meridien Batumi – 10%-იანი ფასდაკლება</h3>
+                            </div>
                         </div>
-                        <h3 class="card-title">
+                        <div class="card">
+                            <div class="photo">
+                                <img src="/assets/slide-4-coliseum.png" alt="Colosseum Marina" class="slider-card-image" />
+                                <img src="/assets/coliseum-logo.png" alt="" class="card-logo" />
+                            </div>
+                            <div class="slider-card-description">
+                                <div class="card-category">
+                                    <p class="">დასვენება</p>
+                                    <p class="">ვიზა</p>
+                                    <p class="">ჯაზ ფესტივალის შეთავაზებები</p>
+                                </div>
+                                <h3 class="card-title">
                            Colosseum Marina Hotel – 15%-იანი ფასდაკლება
                         </h3>
-                     </div>
-                  </div>
-               </div>
-               <div class="scrollbar-container container">
-                  <div class="scrollbar-container-inner inside-content">
-                     <div class="custom-scroll"></div>
-                  </div>
-               </div>
-            </div>
-         </section>
-         <!-- Get-App Section -->
-         <section class="section-download section-padding-top-bottom">
-            <div class="get-app-wrapper">
-               <div class="container">
-                  <div class="inside-content">
-                     <div class="get-app-wrapper">
-                        <div class="get-app-inner">
-                           <h2 class="section-heading">ციფრული ბანკი</h2>
-                           <img
-                              src="/assets/get-app-img.png"
-                              alt="get app image"
-                              class="get-app-img"
-                              />
-                           <div class="button-description-wrapper">
-                              <p class="get-app-description">
-                                 შეასრულეთ საბანკო ოპერაციები დისტანციურად, ციფრული ბანკის
-                                 დახმარებით
-                              </p>
-                              <div class="get-app-buttons">
-                                 <!-- button for mobile -->
-                                 <a href="#" class="get-app-button-mobile">
-                                    <svg
-                                       width="14"
-                                       height="14"
-                                       viewBox="0 0 14 14"
-                                       fill="none"
-                                       xmlns="http://www.w3.org/2000/svg"
-                                       >
-                                       <path
-                                          fill-rule="evenodd"
-                                          clip-rule="evenodd"
-                                          d="M6.41702 7.04427C6.41592 7.02966 6.41536 7.01489 6.41536 7V2.33333C6.41536 2.01133 6.67611 1.75 6.9987 1.75C7.32128 1.75 7.58203 2.01133 7.58203 2.33333V6.9999L8.98203 5.95C9.23986 5.75575 9.60562 5.80883 9.7987 6.06667C9.99236 6.3245 9.93987 6.69025 9.68203 6.88333L7.3487 8.63333C7.24545 8.71092 7.12178 8.75 6.9987 8.75C6.88145 8.75 6.7642 8.71442 6.66328 8.64383L4.32995 7.00233C4.06628 6.81683 4.0027 6.45283 4.1882 6.18975C4.3737 5.92608 4.73711 5.8625 5.00078 6.048L6.41702 7.04427ZM3.4987 9.91667V10.5H10.4987V9.91667C10.4987 9.59583 10.7612 9.33333 11.082 9.33333C11.4029 9.33333 11.6654 9.59583 11.6654 9.91667V11.0833C11.6654 11.4042 11.4029 11.6667 11.082 11.6667H2.91536C2.59453 11.6667 2.33203 11.4042 2.33203 11.0833V9.91667C2.33203 9.59583 2.59453 9.33333 2.91536 9.33333C3.2362 9.33333 3.4987 9.59583 3.4987 9.91667Z"
-                                          fill="#182CC0"
-                                          ></path>
-                                       <mask
-                                          id="mask0_233_12132"
-                                          maskUnits="userSpaceOnUse"
-                                          x="2"
-                                          y="1"
-                                          width="10"
-                                          height="11"
-                                          style="mask-type: luminance"
-                                          >
-                                          <path
-                                             fill-rule="evenodd"
-                                             clip-rule="evenodd"
-                                             d="M6.41702 7.04427C6.41592 7.02966 6.41536 7.01489 6.41536 7V2.33333C6.41536 2.01133 6.67611 1.75 6.9987 1.75C7.32128 1.75 7.58203 2.01133 7.58203 2.33333V6.9999L8.98203 5.95C9.23986 5.75575 9.60562 5.80883 9.7987 6.06667C9.99236 6.3245 9.93987 6.69025 9.68203 6.88333L7.3487 8.63333C7.24545 8.71092 7.12178 8.75 6.9987 8.75C6.88145 8.75 6.7642 8.71442 6.66328 8.64383L4.32995 7.00233C4.06628 6.81683 4.0027 6.45283 4.1882 6.18975C4.3737 5.92608 4.73711 5.8625 5.00078 6.048L6.41702 7.04427ZM3.4987 9.91667V10.5H10.4987V9.91667C10.4987 9.59583 10.7612 9.33333 11.082 9.33333C11.4029 9.33333 11.6654 9.59583 11.6654 9.91667V11.0833C11.6654 11.4042 11.4029 11.6667 11.082 11.6667H2.91536C2.59453 11.6667 2.33203 11.4042 2.33203 11.0833V9.91667C2.33203 9.59583 2.59453 9.33333 2.91536 9.33333C3.2362 9.33333 3.4987 9.59583 3.4987 9.91667Z"
-                                             fill="white"
-                                             ></path>
-                                       </mask>
-                                       <g mask="url(#mask0_233_12132)"></g>
-                                    </svg>
-                                    DOWNLOAD
-                                 </a>
-                                 <!-- buttons for desktop -->
-                                 <div class="google-play-button">
-                                    <img src="" alt="google play logo" class="google-play" />
-                                 </div>
-                                 <div class="appstore-button">
-                                    <img src="" alt="appstore logo" class="appstore" />
-                                 </div>
-                              </div>
-                           </div>
+                            </div>
                         </div>
-                     </div>
-                  </div>
-               </div>
-         </section>
-         <!-- Products section -->
-         <section class="section-products section-padding-top-bottom">
-         <div class="container">
-         <div class="inside-content">
-         <div class="section-products-heading section-offers-heading">
-         <h2 class="section-heading">პროდუქტები</h2>
-         </div>
-         </div>
-         </div>
-         <div class="slider-container">
-         <div class="slider">
-         <div class="card">
-         <div class="photo">
-         <img
-            src="/assets/concept-card1-cifruli.png"
-            alt="concept card cifruli"
-            class="slider-card-image"
-            />
-         </div>
-         <div class="slider-card-description products-slider-card-description">
-         <h3 class="card-title" id="card-title">
+                    </div>
+                    <div class="scrollbar-container container">
+                        <div class="scrollbar-container-inner inside-content">
+                            <div class="custom-scroll"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Get-App Section -->
+            <section class="section-download section-padding-top-bottom">
+                <div class="get-app-wrapper">
+                    <div class="container">
+                        <div class="inside-content">
+                            <div class="get-app-wrapper">
+                                <div class="get-app-inner">
+                                    <h2 class="section-heading">ციფრული ბანკი</h2>
+                                    <img src="/assets/get-app-img.png" alt="get app image" class="get-app-img" />
+                                    <div class="button-description-wrapper">
+                                        <p class="get-app-description">
+                                            შეასრულეთ საბანკო ოპერაციები დისტანციურად, ციფრული ბანკის დახმარებით
+                                        </p>
+                                        <div class="get-app-buttons">
+                                            <!-- button for mobile -->
+                                            <a href="#" class="get-app-button-mobile">
+                                                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M6.41702 7.04427C6.41592 7.02966 6.41536 7.01489 6.41536 7V2.33333C6.41536 2.01133 6.67611 1.75 6.9987 1.75C7.32128 1.75 7.58203 2.01133 7.58203 2.33333V6.9999L8.98203 5.95C9.23986 5.75575 9.60562 5.80883 9.7987 6.06667C9.99236 6.3245 9.93987 6.69025 9.68203 6.88333L7.3487 8.63333C7.24545 8.71092 7.12178 8.75 6.9987 8.75C6.88145 8.75 6.7642 8.71442 6.66328 8.64383L4.32995 7.00233C4.06628 6.81683 4.0027 6.45283 4.1882 6.18975C4.3737 5.92608 4.73711 5.8625 5.00078 6.048L6.41702 7.04427ZM3.4987 9.91667V10.5H10.4987V9.91667C10.4987 9.59583 10.7612 9.33333 11.082 9.33333C11.4029 9.33333 11.6654 9.59583 11.6654 9.91667V11.0833C11.6654 11.4042 11.4029 11.6667 11.082 11.6667H2.91536C2.59453 11.6667 2.33203 11.4042 2.33203 11.0833V9.91667C2.33203 9.59583 2.59453 9.33333 2.91536 9.33333C3.2362 9.33333 3.4987 9.59583 3.4987 9.91667Z"
+                                                    fill="#182CC0"></path>
+                                                    <mask id="mask0_233_12132" maskUnits="userSpaceOnUse" x="2" y="1" width="10" height="11" style="mask-type: luminance">
+                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M6.41702 7.04427C6.41592 7.02966 6.41536 7.01489 6.41536 7V2.33333C6.41536 2.01133 6.67611 1.75 6.9987 1.75C7.32128 1.75 7.58203 2.01133 7.58203 2.33333V6.9999L8.98203 5.95C9.23986 5.75575 9.60562 5.80883 9.7987 6.06667C9.99236 6.3245 9.93987 6.69025 9.68203 6.88333L7.3487 8.63333C7.24545 8.71092 7.12178 8.75 6.9987 8.75C6.88145 8.75 6.7642 8.71442 6.66328 8.64383L4.32995 7.00233C4.06628 6.81683 4.0027 6.45283 4.1882 6.18975C4.3737 5.92608 4.73711 5.8625 5.00078 6.048L6.41702 7.04427ZM3.4987 9.91667V10.5H10.4987V9.91667C10.4987 9.59583 10.7612 9.33333 11.082 9.33333C11.4029 9.33333 11.6654 9.59583 11.6654 9.91667V11.0833C11.6654 11.4042 11.4029 11.6667 11.082 11.6667H2.91536C2.59453 11.6667 2.33203 11.4042 2.33203 11.0833V9.91667C2.33203 9.59583 2.59453 9.33333 2.91536 9.33333C3.2362 9.33333 3.4987 9.59583 3.4987 9.91667Z"
+                                                        fill="white"></path>
+                                                    </mask>
+                                                    <g mask="url(#mask0_233_12132)"></g>
+                                                </svg>
+                                                DOWNLOAD
+                                            </a>
+                                            <!-- buttons for desktop -->
+                                            <div class="google-play-button">
+                                                <img src="" alt="google play logo" class="google-play" />
+                                            </div>
+                                            <div class="appstore-button">
+                                                <img src="" alt="appstore logo" class="appstore" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </section>
+            <!-- Products section -->
+            <section class="section-products section-padding-top-bottom">
+                <div class="container">
+                    <div class="inside-content">
+                        <div class="section-products-heading section-offers-heading">
+                            <h2 class="section-heading">პროდუქტები</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider-container">
+                    <div class="slider">
+                        <div class="card">
+                            <div class="photo">
+                                <img src="/assets/concept-card1-cifruli.png" alt="concept card cifruli" class="slider-card-image" />
+                            </div>
+                            <div class="slider-card-description products-slider-card-description">
+                                <h3 class="card-title" id="card-title">
          ციფრული
          </h3>
-         <div class="products-card-description">
-         <p>თიბისი კონცეპტის ციფრული ნაკრები განკუთვნილია მათთვის, ვისთვისაც <strong>საბანკო მომსახურებით სარგებლობა ყოველდღიურობის ნაწილია</strong>, ვინც აქტიურად მოიხმარს <strong>არასაბანკო პროდუქტებსა და შეთავაზებებს</strong> და ვისაც ურჩევნია დამოუკიდებლად, <strong>პირადი ბანკირის გარეშე</strong> მართოს საკუთარი ფინანსები და საბანკო ოპერაციები.</p>
-         </div>
-         </div>
-         </div>
-         <div class="card">
-         <div class="photo">
-         <img
-            src="/assets/concept-card3-premium.png"
-            alt="concept card 360"
-            class="slider-card-image"
-            />
-         </div>
-         <div class="slider-card-description products-slider-card-description">
-         <h3 class="card-title" id="card-title">
+                                <div class="products-card-description">
+                                    <p>თიბისი კონცეპტის ციფრული ნაკრები განკუთვნილია მათთვის, ვისთვისაც <strong>საბანკო მომსახურებით სარგებლობა ყოველდღიურობის ნაწილია</strong>, ვინც აქტიურად მოიხმარს <strong>არასაბანკო პროდუქტებსა და შეთავაზებებს</strong>                                        და ვისაც ურჩევნია დამოუკიდებლად, <strong>პირადი ბანკირის გარეშე</strong> მართოს საკუთარი ფინანსები და საბანკო ოპერაციები.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="photo">
+                                <img src="/assets/concept-card3-premium.png" alt="concept card 360" class="slider-card-image" />
+                            </div>
+                            <div class="slider-card-description products-slider-card-description">
+                                <h3 class="card-title" id="card-title">
          პრემიუმი
          </h3>
-         <div class="products-card-description">
-         <p>თიბისი კონცეპტის მომხმარებლებთან ურთიერთობის ერთ-ერთი ფორმატი - <strong>პრემიუმ ნაკრები</strong>, სხვა საბანკო და არასაბანკო უპირატესობებთან ერთად, <strong>პირადი ბანკირის მომსახურებას</strong> გულისხმობს. პირადი ბანკირის მთავარი ამოცანა მომხარებლისთვის ცხოვრების გამარტივება და მისთვის უმაღლესი ხარისხის მომსახურების უზრუნველყოფაა.</p>
-         </div>
-         </div>
-         </div>
-         <div class="card">
-         <div class="photo">
-         <img
-            src="/assets/concept-card2-360.png"
-            alt="concept card cifruli"
-            class="slider-card-image"
-            />
-         </div>
-         <div class="slider-card-description products-slider-card-description">
-         <h3 class="card-title" id="card-title">
+                                <div class="products-card-description">
+                                    <p>თიბისი კონცეპტის მომხმარებლებთან ურთიერთობის ერთ-ერთი ფორმატი - <strong>პრემიუმ ნაკრები</strong>, სხვა საბანკო და არასაბანკო უპირატესობებთან ერთად, <strong>პირადი ბანკირის მომსახურებას</strong> გულისხმობს. პირადი ბანკირის
+                                        მთავარი ამოცანა მომხარებლისთვის ცხოვრების გამარტივება და მისთვის უმაღლესი ხარისხის მომსახურების უზრუნველყოფაა.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="photo">
+                                <img src="/assets/concept-card2-360.png" alt="concept card cifruli" class="slider-card-image" />
+                            </div>
+                            <div class="slider-card-description products-slider-card-description">
+                                <h3 class="card-title" id="card-title">
          360
          </h3>
-         <div class="products-card-description">
-         <p><strong>თიბისი კონცეპტის 360</strong> ნაკრები განკუთვნილია მათთვის, ვისაც სხვა საბანკო და არასაბანკო უპიტარესობებთან ერთად, კიდევ უფრო <strong>მეტი ფინანსური ინსტრუმენტი</strong> და <strong>გაზრდილი შესაძლებლობები</strong> ესაჭიროება.</p>
-         </div>
-         </div>
-         </div>
-         </div>
-         <div class="scrollbar-container container">
-         <div class="scrollbar-container-inner inside-content">
-         <div class="custom-scroll"></div>
-         </div>
-         </div>
-         </div>
-         </section>
-         <!-- Section - personal Banker -->
-         <section class="section-main-wrapper">
-         <div class="section-main-banner section-personal-banker inside-content">
-         <div class="main-banner-content container" id="main-banner-content">
-         <h1>პირადი ბანკირი</h1>
-         <p>თქვენი სანდო პარტნიორი ფინანსურ რჩევებსა და ოპერაციებში</p>
-         <div class="button">გაიგეთ მეტი</div>
-         </div>
-         </div>
-         </section>
-         <!-- Section - Rewards -->
-         <section class="section-rewards section-padding-top-bottom">
-         <div class="container">
-         <div class="inside-content">
-         <div class="section-rewards-heading section-offers-heading">
-         <h2 class="section-heading">ჯილდოები</h2>
-         </div>
-         </div>
-         </div>
-         <div class="slider-container">
-         <div class="slider">
-         <div class="card">
-         <div class="slider-card-description">
-         <div class="rewards-logo">
-         <img src="assets/global-finance-logo.png" alt="global finance logo">
-         </div>
-         <h3 class="card-title" id="card-title">
+                                <div class="products-card-description">
+                                    <p><strong>თიბისი კონცეპტის 360</strong> ნაკრები განკუთვნილია მათთვის, ვისაც სხვა საბანკო და არასაბანკო უპიტარესობებთან ერთად, კიდევ უფრო <strong>მეტი ფინანსური ინსტრუმენტი</strong> და <strong>გაზრდილი შესაძლებლობები</strong>                                        ესაჭიროება.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="scrollbar-container container">
+                        <div class="scrollbar-container-inner inside-content">
+                            <div class="custom-scroll"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Section - personal Banker -->
+            <section class="section-main-wrapper">
+                <div class="section-main-banner section-personal-banker inside-content">
+                    <div class="main-banner-content container" id="main-banner-content">
+                        <h1>პირადი ბანკირი</h1>
+                        <p>თქვენი სანდო პარტნიორი ფინანსურ რჩევებსა და ოპერაციებში</p>
+                        <div class="button">გაიგეთ მეტი</div>
+                    </div>
+                </div>
+            </section>
+            <!-- Section - Rewards -->
+            <section class="section-rewards section-padding-top-bottom">
+                <div class="container">
+                    <div class="inside-content">
+                        <div class="section-rewards-heading section-offers-heading">
+                            <h2 class="section-heading">ჯილდოები</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider-container">
+                    <div class="slider">
+                        <div class="card">
+                            <div class="slider-card-description">
+                                <div class="rewards-logo">
+                                    <img src="assets/global-finance-logo.png" alt="global finance logo">
+                                </div>
+                                <h3 class="card-title" id="card-title">
          საუკეთესო პერსონალური საბანკო მომსახურება საქართველოში 2024
          </h3>
-         <p>The Global Finance</p>
-         </div>
-         </div>
-         <div class="card">
-         <div class="slider-card-description">
-         <div class="rewards-logo">
-         <img src="assets/euromoney-logo.png" alt="euromoney logo logo">
-         </div>
-         <h3 class="card-title" id="card-title">
+                                <p>The Global Finance</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="slider-card-description">
+                                <div class="rewards-logo">
+                                    <img src="assets/euromoney-logo.png" alt="euromoney logo logo">
+                                </div>
+                                <h3 class="card-title" id="card-title">
          საუკეთესო პერსონალური საბანკო მომსახურება საქართველოში 2023
          </h3>
-         <p>Euromoney</p>
-         </div>
-         </div>
-         <div class="card">
-         <div class="slider-card-description">
-         <div class="rewards-logo">
-         <img src="assets/global-finance-logo.png" alt="global finance logo">
-         </div>
-         <h3 class="card-title" id="card-title">
+                                <p>Euromoney</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="slider-card-description">
+                                <div class="rewards-logo">
+                                    <img src="assets/global-finance-logo.png" alt="global finance logo">
+                                </div>
+                                <h3 class="card-title" id="card-title">
          საუკეთესო პერსონალური საბანკო მომსახურება საქართველოში 2022
          </h3>
-         <p>The Global Finance</p>
-         </div>
-         </div>
-         <div class="card">
-         <div class="slider-card-description">
-         <div class="rewards-logo">
-         <img src="assets/the-banker.png" alt="the banker logo">
-         </div>
-         <h3 class="card-title" id="card-title">
+                                <p>The Global Finance</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="slider-card-description">
+                                <div class="rewards-logo">
+                                    <img src="assets/the-banker.png" alt="the banker logo">
+                                </div>
+                                <h3 class="card-title" id="card-title">
          საუკეთესო პერსონალური საბანკო მომსახურება საქართველოში 2021
          </h3>
-         <p>The Banker & PWM</p>
-         </div>
-         </div>
-         </div>
-         <div class="scrollbar-container container">
-         <div class="scrollbar-container-inner inside-content">
-         <div class="custom-scroll"></div>
-         </div>
-         </div>
-         </div>
-         </section>
-         <!-- End Of Main -->
-      </main>
-      <!-- Footer -->
-      <div class="footer-padding-top">
-      <footer>
-      <div class="footer-top-wrapper container">
-      <!-- footer top -->
-      <div class="inside-content">
-      <div class="footer-top">
-      <div class="footer-logo"></div>
-      <div class="language-change">
-      <svg
-         data-v-174d8ed1=""
-         width="16"
-         height="16"
-         viewbox="0 0 16 16"
-         fill="currentColor"
-         xmlns="http://www.w3.org/2000/svg"
-         >
-      <path
-         data-v-174d8ed1=""
-         d="M14.6654 7.99992C14.6654 4.32659 11.672 1.33325 7.9987 1.33325C4.32536 1.33325 1.33203 4.32659 1.33203 7.99992C1.33203 11.6733 4.32536 14.6666 7.9987 14.6666C11.672 14.6666 14.6654 11.6733 14.6654 7.99992ZM13.2854 7.33325H11.3187C11.2587 5.83325 10.972 4.37325 10.4587 3.26659C11.9787 4.05992 13.072 5.55992 13.292 7.33325H13.2854ZM7.9987 13.3333C6.9787 13.3333 6.1387 11.2999 6.0187 8.66659H9.98536C9.86536 11.2999 9.02536 13.3333 8.00536 13.3333H7.9987ZM6.0187 7.33325C6.1387 4.69992 6.9787 2.66659 7.9987 2.66659C9.0187 2.66659 9.8587 4.69992 9.9787 7.33325H6.01203H6.0187ZM5.54536 3.26659C5.02536 4.37325 4.74536 5.82659 4.68536 7.33325H2.7187C2.9387 5.55992 4.03203 4.05992 5.55203 3.26659H5.54536ZM2.71203 8.66659H4.6787C4.7387 10.1666 5.02536 11.6266 5.5387 12.7333C4.0187 11.9399 2.92536 10.4399 2.70536 8.66659H2.71203ZM10.452 12.7333C10.972 11.6266 11.252 10.1733 11.312 8.66659H13.2787C13.0587 10.4399 11.9654 11.9399 10.4454 12.7333H10.452Z"
-         ></path>
-      </svg>
-      <div class="language">ქარ</div>
-      <div class="language-list"><p>Eng</p></div>
-      </div>
-      </div>
-      </div>
-      </div>
-      <!-- footer main -->
-      <div class="container">
-      <div class="inside-content">
-      <div class="footer-main">
-      <!-- dropdown list -->
-      <div class="footer-list-wrapper">
-      <ul class="nav-list">
-      <li class="footer-list-item list-item">
-      <div class="nav-item-content item-content">
-      <span>პროდუქტები</span>
-      <img
-         src="/assets/footer-dropdown-arrow.svg"
-         alt="mobile mobile-dropdown-arrow"
-         class="footer-list-dropdown-arrow"
-         />
-      </div>
-      <ul class="dropdown-list footer-dropdown-list">
-      <li class="nav-dropdown-item">ნაკრები</li>
-      <li class="nav-dropdown-item">პერსონალური ბანკირი</li>
-      </ul>
-      </li>
-      <li class="footer-list-item list-item">
-      <div class="nav-item-content item-content">
-      <span>Lifestyle</span>
-      <img
-         src="/assets/footer-dropdown-arrow.svg"
-         alt="mobile mobile-dropdown-arrow"
-         class="footer-list-dropdown-arrow"
-         />
-      </div>
-      <ul class="dropdown-list footer-dropdown-list">
-      <li class="nav-dropdown-item">შეთავაზებები</li>
-      <li class="nav-dropdown-item">ღონისძიებები</li>
-      </ul>
-      </li>
-      <li class="footer-list-item list-item">
-      <div class="nav-item-content item-content">
-      <span>კონცეპტის სივრცე</span>
-      <img
-         src="/assets/footer-dropdown-arrow.svg"
-         alt="mobile mobile-dropdown-arrow"
-         class="footer-list-dropdown-arrow"
-         />
-      </div>
-      <ul class="dropdown-list footer-dropdown-list">
-      <li class="nav-dropdown-item">კაფე</li>
-      <li class="nav-dropdown-item">ბიბლიოთეკა</li>
-      </ul>
-      </li>
-      </ul>
-      </div>
-      <div class="footer-contacts">
-      <div class="contact-us">
-      <div>
-      <h2>დაგვიკავშირდით:</h2>
-      </div>
-      <div class="contact-ways">
-      <div class="tel contact">
-      <img src="./assets/telephone.svg" alt="telephone icon" />
-      <a href="tel:+1234567890">+995 32 2 27 27 00</a>
-      </div>
-      <div class="email contact">
-      <img src="./assets/email-icon.svg" alt="email icon" />
-      <a href="mailto:info@tbcconcept.ge">info@tbcconcept.ge</a>
-      </div>
-      <div class="location contact">
-      <img
-         src="./assets/location-icon.svg"
-         alt="location icon svg"
-         />
-      <a href="#">ფილიალები</a>
-      </div>
-      </div>
-      </div>
-      <div class="social">
-      <h2>სოციალური ქსელები</h2>
-      <div class="social-icons">
-      <div class="social-icon">
-      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"><path fill="currentColor" d="M8.46 18h2.93v-7.3h2.45l.37-2.84h-2.82V6.04c0-.82.23-1.38 1.41-1.38h1.51V2.11c-.26-.03-1.15-.11-2.19-.11c-2.18 0-3.66 1.33-3.66 3.76v2.1H6v2.84h2.46z"/></svg>                  
-      </div>
-      <div class="social-icon">
-      <svg
-         width="17"
-         height="16"
-         viewBox="0 0 17 16"
-         fill="currentColor"
-         xmlns="http://www.w3.org/2000/svg"
-         class="bi bi-instagram"
-         >
-      <path
-         d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"
-         ></path>
-      </svg>
-      </div>
-      </div>
-      </div>
-      </div>
-      </div>
-      </div>
-      </div>
-      <!-- footer bottom -->
-      <div class="footer-bottom-wrapper">
-      <div class="container">
-      <div class="inside-content">
-      <div class="footer-bottom">
-      <div class="footer-bottom-links">
-      <span>კონფიდენციალურობა</span>
-      <span>წესები და პირობები</span>
-      </div>
-      <div class="footer-bottom-logo-wrapper">
-      <div class="footer-bottom-logo">
-      <img src="./assets/tbc-logo-footer-bottom.svg" alt="tbc logo" />
-      </div>
-      <p>2024 ყველა უფლება დაცულია</p>
-      </div>
-      </div>
-      </div>
-      </div>
-      </div>
-      </footer>
-      </div>
-      <div class="button-menu-wrapper">
-      <div class="button-menu">
-      <div class="icon-container">
-      <svg class="open-bottom-menu" width="24" height="24" viewBox="0 0 24 24" fill="rgb(255 255 255)" xmlns="http://www.w3.org/2000/svg"><path data-v-42e74cda="" d="M12 8C13.65 8 15 6.65 15 5C15 3.35 13.65 2 12 2C10.35 2 9 3.35 9 5C9 6.65 10.35 8 12 8ZM12 9C10.35 9 9 10.35 9 12C9 13.65 10.35 15 12 15C13.65 15 15 13.65 15 12C15 10.35 13.65 9 12 9ZM12 16C10.35 16 9 17.35 9 19C9 20.65 10.35 22 12 22C13.65 22 15 20.65 15 19C15 17.35 13.65 16 12 16Z"></path></svg>
-      </div>
-      <div class="icon-container">
-      <svg class="close-bottom-menu" width="24" height="24" viewBox="0 0 24 24" fill="rgb(255 255 255)" xmlns="http://www.w3.org/2000/svg"><path data-v-42e74cda="" d="M13.4141 12L17.7071 7.70701C18.0981 7.31601 18.0981 6.68401 17.7071 6.29301C17.3161 5.90201 16.6841 5.90201 16.2931 6.29301L12.0001 10.586L7.70713 6.29301C7.31613 5.90201 6.68413 5.90201 6.29313 6.29301C5.90213 6.68401 5.90213 7.31601 6.29313 7.70701L10.5861 12L6.29313 16.293C5.90213 16.684 5.90213 17.316 6.29313 17.707C6.48813 17.902 6.74413 18 7.00013 18C7.25613 18 7.51213 17.902 7.70713 17.707L12.0001 13.414L16.2931 17.707C16.4881 17.902 16.7441 18 17.0001 18C17.2561 18 17.5121 17.902 17.7071 17.707C18.0981 17.316 18.0981 16.684 17.7071 16.293L13.4141 12Z"></path><mask data-v-42e74cda="" id="mask0_907_111854" maskUnits="userSpaceOnUse" x="5" y="5" width="14" height="13" style="mask-type: luminance;"><path data-v-42e74cda="" d="M13.4141 12L17.7071 7.70701C18.0981 7.31601 18.0981 6.68401 17.7071 6.29301C17.3161 5.90201 16.6841 5.90201 16.2931 6.29301L12.0001 10.586L7.70713 6.29301C7.31613 5.90201 6.68413 5.90201 6.29313 6.29301C5.90213 6.68401 5.90213 7.31601 6.29313 7.70701L10.5861 12L6.29313 16.293C5.90213 16.684 5.90213 17.316 6.29313 17.707C6.48813 17.902 6.74413 18 7.00013 18C7.25613 18 7.51213 17.902 7.70713 17.707L12.0001 13.414L16.2931 17.707C16.4881 17.902 16.7441 18 17.0001 18C17.2561 18 17.5121 17.902 17.7071 17.707C18.0981 17.316 18.0981 16.684 17.7071 16.293L13.4141 12Z"></path></mask><g data-v-42e74cda="" mask="url(#mask0_907_111854)"></g></svg>
-      </div>
-      </div>
-      <div class="buttons">
-      <div class="bottom-menu-button">
-      <div class="bottom-menu-button-text">
-      <p>მოგვწერეთ</p>
-      <div class="triangle-svg">
-      <svg data-v-42e74cda="" width="8" height="24" viewBox="0 0 8 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path data-v-42e74cda="" d="M6.87662 14.8284L1.12339 20.8284C0.404095 21.5786 7.66111e-07 22.596 8.12483e-07 23.6569L2.04844e-07 0.343145C2.51216e-07 1.40401 0.404094 2.42143 1.12339 3.17157L6.87661 9.17157C8.37446 10.7337 8.37446 13.2663 6.87662 14.8284Z" fill="#424A4D"></path></svg>
-      </div>
-      </div>
-      <svg data-v-42e74cda="" width="28" height="28" viewBox="0 0 28 28" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path data-v-42e74cda="" d="M21.0007 4.66675H7.00065C4.42232 4.66675 2.33398 6.75508 2.33398 9.33342V18.6784C2.33398 21.2568 4.42232 23.3451 7.00065 23.3451H21.0007C23.579 23.3451 25.6673 21.2568 25.6673 18.6784V9.33342C25.6673 6.75508 23.579 4.66675 21.0007 4.66675ZM21.0007 7.00008C21.1407 7.00008 21.269 7.02342 21.409 7.03508L14.0007 11.4801L6.56898 7.04675C6.70898 7.02341 6.86065 7.00008 7.01232 7.00008H21.0123H21.0007ZM23.334 18.6784C23.334 19.9618 22.284 21.0117 21.0007 21.0117H7.00065C5.71732 21.0117 4.66732 19.9618 4.66732 18.6784V9.33342C4.66732 9.11175 4.71398 8.90175 4.77232 8.69175L13.4057 13.8484C13.5923 13.9534 13.7907 14.0117 14.0007 14.0117C14.2107 14.0117 14.4207 13.9534 14.5957 13.8484L23.2173 8.66841C23.2756 8.87842 23.3223 9.10008 23.3223 9.33342V18.6784H23.334Z"></path></svg>
-      </div>
-      <div class="bottom-menu-button">
-      <div class="bottom-menu-button-text">
-      <p>ქოლ ცენტრი</p>
-      <div class="triangle-svg">
-      <svg data-v-42e74cda="" width="8" height="24" viewBox="0 0 8 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path data-v-42e74cda="" d="M6.87662 14.8284L1.12339 20.8284C0.404095 21.5786 7.66111e-07 22.596 8.12483e-07 23.6569L2.04844e-07 0.343145C2.51216e-07 1.40401 0.404094 2.42143 1.12339 3.17157L6.87661 9.17157C8.37446 10.7337 8.37446 13.2663 6.87662 14.8284Z" fill="#424A4D"></path></svg>
-      </div>
-      </div>
-      <svg data-v-42e74cda="" width="28" height="28" viewBox="0 0 28 28" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path data-v-42e74cda="" d="M14.0007 25.6666C7.58398 25.6666 2.33398 20.4166 2.33398 13.9999C2.33398 7.58325 7.58398 2.33325 14.0007 2.33325C20.4173 2.33325 25.6673 7.58325 25.6673 13.9999C25.6673 15.8666 25.3173 17.6166 24.5007 19.1333C24.2673 19.7166 23.5673 19.9499 22.984 19.7166C22.4007 19.4833 22.1673 18.7833 22.4007 18.1999C23.1007 16.9166 23.334 15.5166 23.334 13.9999C23.334 8.86658 19.134 4.66659 14.0007 4.66659C8.86732 4.66659 4.66732 8.86658 4.66732 13.9999C4.66732 18.7833 8.28398 22.6333 12.834 23.2166V22.1666C12.834 21.4666 13.3007 20.9999 14.0007 20.9999C14.7007 20.9999 15.1673 21.4666 15.1673 22.1666V24.4999C15.1673 25.1999 14.7007 25.6666 14.0007 25.6666ZM9.33398 18.6666C8.98398 18.6666 8.63398 18.5499 8.40065 18.1999C7.46732 16.9166 7.00065 15.5166 7.00065 13.9999C7.00065 12.4833 7.46732 10.9666 8.40065 9.79992C8.75065 9.33325 9.56732 9.21658 10.034 9.56658C10.5007 9.91658 10.6173 10.7333 10.2673 11.1999C9.68398 12.0166 9.33398 12.9499 9.33398 13.9999C9.33398 15.0499 9.68398 15.9833 10.2673 16.7999C10.6173 17.2666 10.5007 18.0833 10.034 18.4333C9.80065 18.5499 9.56732 18.6666 9.33398 18.6666ZM18.6673 18.6666C18.434 18.6666 18.2007 18.5499 17.9673 18.4333C17.5007 18.0833 17.384 17.2666 17.734 16.7999C18.3173 15.9833 18.6673 15.0499 18.6673 13.9999C18.6673 12.9499 18.3173 12.0166 17.734 11.1999C17.384 10.7333 17.5007 9.91658 17.9673 9.56658C18.434 9.21658 19.2506 9.33325 19.6006 9.79992C20.534 10.9666 21.0007 12.4833 21.0007 13.9999C21.0007 15.5166 20.534 17.0333 19.6006 18.1999C19.3673 18.4333 19.0173 18.6666 18.6673 18.6666Z"></path></svg>
-      </div>
-      <div class="bottom-menu-button">
-      <div class="bottom-menu-button-text">
-      <p>მისამართი</p>
-      <div class="triangle-svg">
-      <svg data-v-42e74cda="" width="8" height="24" viewBox="0 0 8 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path data-v-42e74cda="" d="M6.87662 14.8284L1.12339 20.8284C0.404095 21.5786 7.66111e-07 22.596 8.12483e-07 23.6569L2.04844e-07 0.343145C2.51216e-07 1.40401 0.404094 2.42143 1.12339 3.17157L6.87661 9.17157C8.37446 10.7337 8.37446 13.2663 6.87662 14.8284Z" fill="#424A4D"></path></svg>
-      </div>
-      </div>
-      <svg data-v-42e74cda="" width="28" height="28" viewBox="0 0 28 28" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path data-v-42e74cda="" d="M14 2.33334C9.49665 2.33334 5.83331 5.99668 5.83331 10.5C5.83331 17.115 11.9466 24.5117 12.2033 24.8267C12.6466 25.3633 13.3 25.6667 14 25.6667C14.6883 25.6667 15.3533 25.3517 15.7966 24.8267C16.0533 24.5117 22.1666 17.08 22.1666 10.5C22.1666 5.99668 18.5033 2.33334 14 2.33334ZM14 23.3333C14 23.3333 8.16665 16.345 8.16665 10.5C8.16665 7.28001 10.78 4.66668 14 4.66668C17.22 4.66668 19.8333 7.28001 19.8333 10.5C19.8333 16.31 14 23.3333 14 23.3333ZM14 7.00001C12.075 7.00001 10.5 8.57501 10.5 10.5C10.5 12.425 12.075 14 14 14C15.925 14 17.5 12.425 17.5 10.5C17.5 8.57501 15.925 7.00001 14 7.00001ZM14 11.6667C13.3583 11.6667 12.8333 11.1417 12.8333 10.5C12.8333 9.85834 13.3583 9.33334 14 9.33334C14.6416 9.33334 15.1666 9.85834 15.1666 10.5C15.1666 11.1417 14.6416 11.6667 14 11.6667Z"></path></svg>
-      </div>
-      </div>
-      </div>
-      </div>
-      <script type="module" src="index.js"></script>
-      <script src="slider.js"></script>
-   </body>
+                                <p>The Banker & PWM</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="scrollbar-container container">
+                        <div class="scrollbar-container-inner inside-content">
+                            <div class="custom-scroll"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- End Of Main -->
+        </main>
+        <!-- Footer -->
+        <div class="footer-padding-top">
+            <footer>
+                <div class="footer-top-wrapper container">
+                    <!-- footer top -->
+                    <div class="inside-content">
+                        <div class="footer-top">
+                            <div class="footer-logo"></div>
+                            <div class="language-change">
+                                <svg data-v-174d8ed1="" width="16" height="16" viewbox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                    <path data-v-174d8ed1="" d="M14.6654 7.99992C14.6654 4.32659 11.672 1.33325 7.9987 1.33325C4.32536 1.33325 1.33203 4.32659 1.33203 7.99992C1.33203 11.6733 4.32536 14.6666 7.9987 14.6666C11.672 14.6666 14.6654 11.6733 14.6654 7.99992ZM13.2854 7.33325H11.3187C11.2587 5.83325 10.972 4.37325 10.4587 3.26659C11.9787 4.05992 13.072 5.55992 13.292 7.33325H13.2854ZM7.9987 13.3333C6.9787 13.3333 6.1387 11.2999 6.0187 8.66659H9.98536C9.86536 11.2999 9.02536 13.3333 8.00536 13.3333H7.9987ZM6.0187 7.33325C6.1387 4.69992 6.9787 2.66659 7.9987 2.66659C9.0187 2.66659 9.8587 4.69992 9.9787 7.33325H6.01203H6.0187ZM5.54536 3.26659C5.02536 4.37325 4.74536 5.82659 4.68536 7.33325H2.7187C2.9387 5.55992 4.03203 4.05992 5.55203 3.26659H5.54536ZM2.71203 8.66659H4.6787C4.7387 10.1666 5.02536 11.6266 5.5387 12.7333C4.0187 11.9399 2.92536 10.4399 2.70536 8.66659H2.71203ZM10.452 12.7333C10.972 11.6266 11.252 10.1733 11.312 8.66659H13.2787C13.0587 10.4399 11.9654 11.9399 10.4454 12.7333H10.452Z"></path>
+                                </svg>
+                                <div class="language">ქარ</div>
+                                <div class="language-list">
+                                    <p>Eng</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- footer main -->
+                <div class="container">
+                    <div class="inside-content">
+                        <div class="footer-main">
+                            <!-- dropdown list -->
+                            <div class="footer-list-wrapper">
+                                <ul class="nav-list">
+                                    <li class="footer-list-item list-item">
+                                        <div class="nav-item-content item-content">
+                                            <span>პროდუქტები</span>
+                                            <img src="/assets/footer-dropdown-arrow.svg" alt="mobile mobile-dropdown-arrow" class="footer-list-dropdown-arrow" />
+                                        </div>
+                                        <ul class="dropdown-list footer-dropdown-list">
+                                            <li class="nav-dropdown-item">ნაკრები</li>
+                                            <li class="nav-dropdown-item">პერსონალური ბანკირი</li>
+                                        </ul>
+                                    </li>
+                                    <li class="footer-list-item list-item">
+                                        <div class="nav-item-content item-content">
+                                            <span>Lifestyle</span>
+                                            <img src="/assets/footer-dropdown-arrow.svg" alt="mobile mobile-dropdown-arrow" class="footer-list-dropdown-arrow" />
+                                        </div>
+                                        <ul class="dropdown-list footer-dropdown-list">
+                                            <li class="nav-dropdown-item">შეთავაზებები</li>
+                                            <li class="nav-dropdown-item">ღონისძიებები</li>
+                                        </ul>
+                                    </li>
+                                    <li class="footer-list-item list-item">
+                                        <div class="nav-item-content item-content">
+                                            <span>კონცეპტის სივრცე</span>
+                                            <img src="/assets/footer-dropdown-arrow.svg" alt="mobile mobile-dropdown-arrow" class="footer-list-dropdown-arrow" />
+                                        </div>
+                                        <ul class="dropdown-list footer-dropdown-list">
+                                            <li class="nav-dropdown-item">კაფე</li>
+                                            <li class="nav-dropdown-item">ბიბლიოთეკა</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="footer-contacts">
+                                <div class="contact-us">
+                                    <div>
+                                        <h2>დაგვიკავშირდით:</h2>
+                                    </div>
+                                    <div class="contact-ways">
+                                        <div class="tel contact">
+                                            <img src="./assets/telephone.svg" alt="telephone icon" />
+                                            <a href="tel:+1234567890">+995 32 2 27 27 00</a>
+                                        </div>
+                                        <div class="email contact">
+                                            <img src="./assets/email-icon.svg" alt="email icon" />
+                                            <a href="mailto:info@tbcconcept.ge">info@tbcconcept.ge</a>
+                                        </div>
+                                        <div class="location contact">
+                                            <img src="./assets/location-icon.svg" alt="location icon svg" />
+                                            <a href="#">ფილიალები</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="social">
+                                    <h2>სოციალური ქსელები</h2>
+                                    <div class="social-icons">
+                                        <div class="social-icon">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+                                                <path fill="currentColor" d="M8.46 18h2.93v-7.3h2.45l.37-2.84h-2.82V6.04c0-.82.23-1.38 1.41-1.38h1.51V2.11c-.26-.03-1.15-.11-2.19-.11c-2.18 0-3.66 1.33-3.66 3.76v2.1H6v2.84h2.46z" />
+                                            </svg>
+                                        </div>
+                                        <div class="social-icon">
+                                            <svg width="17" height="16" viewBox="0 0 17 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg" class="bi bi-instagram">
+                                                <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"></path>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- footer bottom -->
+                <div class="footer-bottom-wrapper">
+                    <div class="container">
+                        <div class="inside-content">
+                            <div class="footer-bottom">
+                                <div class="footer-bottom-links">
+                                    <span>კონფიდენციალურობა</span>
+                                    <span>წესები და პირობები</span>
+                                </div>
+                                <div class="footer-bottom-logo-wrapper">
+                                    <div class="footer-bottom-logo">
+                                        <img src="./assets/tbc-logo-footer-bottom.svg" alt="tbc logo" />
+                                    </div>
+                                    <p>2024 ყველა უფლება დაცულია</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+        <div class="button-menu-wrapper">
+            <div class="button-menu">
+                <div class="icon-container">
+                    <svg class="open-bottom-menu" width="24" height="24" viewBox="0 0 24 24" fill="rgb(255 255 255)" xmlns="http://www.w3.org/2000/svg">
+                        <path data-v-42e74cda="" d="M12 8C13.65 8 15 6.65 15 5C15 3.35 13.65 2 12 2C10.35 2 9 3.35 9 5C9 6.65 10.35 8 12 8ZM12 9C10.35 9 9 10.35 9 12C9 13.65 10.35 15 12 15C13.65 15 15 13.65 15 12C15 10.35 13.65 9 12 9ZM12 16C10.35 16 9 17.35 9 19C9 20.65 10.35 22 12 22C13.65 22 15 20.65 15 19C15 17.35 13.65 16 12 16Z"></path>
+                    </svg>
+                </div>
+                <div class="icon-container">
+                    <svg class="close-bottom-menu" width="24" height="24" viewBox="0 0 24 24" fill="rgb(255 255 255)" xmlns="http://www.w3.org/2000/svg">
+                        <path data-v-42e74cda="" d="M13.4141 12L17.7071 7.70701C18.0981 7.31601 18.0981 6.68401 17.7071 6.29301C17.3161 5.90201 16.6841 5.90201 16.2931 6.29301L12.0001 10.586L7.70713 6.29301C7.31613 5.90201 6.68413 5.90201 6.29313 6.29301C5.90213 6.68401 5.90213 7.31601 6.29313 7.70701L10.5861 12L6.29313 16.293C5.90213 16.684 5.90213 17.316 6.29313 17.707C6.48813 17.902 6.74413 18 7.00013 18C7.25613 18 7.51213 17.902 7.70713 17.707L12.0001 13.414L16.2931 17.707C16.4881 17.902 16.7441 18 17.0001 18C17.2561 18 17.5121 17.902 17.7071 17.707C18.0981 17.316 18.0981 16.684 17.7071 16.293L13.4141 12Z"></path>
+                        <mask data-v-42e74cda="" id="mask0_907_111854" maskUnits="userSpaceOnUse" x="5" y="5" width="14" height="13" style="mask-type: luminance;">
+                            <path data-v-42e74cda="" d="M13.4141 12L17.7071 7.70701C18.0981 7.31601 18.0981 6.68401 17.7071 6.29301C17.3161 5.90201 16.6841 5.90201 16.2931 6.29301L12.0001 10.586L7.70713 6.29301C7.31613 5.90201 6.68413 5.90201 6.29313 6.29301C5.90213 6.68401 5.90213 7.31601 6.29313 7.70701L10.5861 12L6.29313 16.293C5.90213 16.684 5.90213 17.316 6.29313 17.707C6.48813 17.902 6.74413 18 7.00013 18C7.25613 18 7.51213 17.902 7.70713 17.707L12.0001 13.414L16.2931 17.707C16.4881 17.902 16.7441 18 17.0001 18C17.2561 18 17.5121 17.902 17.7071 17.707C18.0981 17.316 18.0981 16.684 17.7071 16.293L13.4141 12Z"></path>
+                        </mask>
+                        <g data-v-42e74cda="" mask="url(#mask0_907_111854)"></g>
+                    </svg>
+                </div>
+            </div>
+            <div class="buttons">
+                <div class="bottom-menu-button">
+                    <div class="bottom-menu-button-text">
+                        <p>მოგვწერეთ</p>
+                        <div class="triangle-svg">
+                            <svg data-v-42e74cda="" width="8" height="24" viewBox="0 0 8 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path data-v-42e74cda="" d="M6.87662 14.8284L1.12339 20.8284C0.404095 21.5786 7.66111e-07 22.596 8.12483e-07 23.6569L2.04844e-07 0.343145C2.51216e-07 1.40401 0.404094 2.42143 1.12339 3.17157L6.87661 9.17157C8.37446 10.7337 8.37446 13.2663 6.87662 14.8284Z"
+                                fill="#424A4D"></path>
+                            </svg>
+                        </div>
+                    </div>
+                    <svg data-v-42e74cda="" width="28" height="28" viewBox="0 0 28 28" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <path data-v-42e74cda="" d="M21.0007 4.66675H7.00065C4.42232 4.66675 2.33398 6.75508 2.33398 9.33342V18.6784C2.33398 21.2568 4.42232 23.3451 7.00065 23.3451H21.0007C23.579 23.3451 25.6673 21.2568 25.6673 18.6784V9.33342C25.6673 6.75508 23.579 4.66675 21.0007 4.66675ZM21.0007 7.00008C21.1407 7.00008 21.269 7.02342 21.409 7.03508L14.0007 11.4801L6.56898 7.04675C6.70898 7.02341 6.86065 7.00008 7.01232 7.00008H21.0123H21.0007ZM23.334 18.6784C23.334 19.9618 22.284 21.0117 21.0007 21.0117H7.00065C5.71732 21.0117 4.66732 19.9618 4.66732 18.6784V9.33342C4.66732 9.11175 4.71398 8.90175 4.77232 8.69175L13.4057 13.8484C13.5923 13.9534 13.7907 14.0117 14.0007 14.0117C14.2107 14.0117 14.4207 13.9534 14.5957 13.8484L23.2173 8.66841C23.2756 8.87842 23.3223 9.10008 23.3223 9.33342V18.6784H23.334Z"></path>
+                    </svg>
+                </div>
+                <div class="bottom-menu-button">
+                    <div class="bottom-menu-button-text">
+                        <p>ქოლ ცენტრი</p>
+                        <div class="triangle-svg">
+                            <svg data-v-42e74cda="" width="8" height="24" viewBox="0 0 8 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path data-v-42e74cda="" d="M6.87662 14.8284L1.12339 20.8284C0.404095 21.5786 7.66111e-07 22.596 8.12483e-07 23.6569L2.04844e-07 0.343145C2.51216e-07 1.40401 0.404094 2.42143 1.12339 3.17157L6.87661 9.17157C8.37446 10.7337 8.37446 13.2663 6.87662 14.8284Z"
+                                fill="#424A4D"></path>
+                            </svg>
+                        </div>
+                    </div>
+                    <svg data-v-42e74cda="" width="28" height="28" viewBox="0 0 28 28" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <path data-v-42e74cda="" d="M14.0007 25.6666C7.58398 25.6666 2.33398 20.4166 2.33398 13.9999C2.33398 7.58325 7.58398 2.33325 14.0007 2.33325C20.4173 2.33325 25.6673 7.58325 25.6673 13.9999C25.6673 15.8666 25.3173 17.6166 24.5007 19.1333C24.2673 19.7166 23.5673 19.9499 22.984 19.7166C22.4007 19.4833 22.1673 18.7833 22.4007 18.1999C23.1007 16.9166 23.334 15.5166 23.334 13.9999C23.334 8.86658 19.134 4.66659 14.0007 4.66659C8.86732 4.66659 4.66732 8.86658 4.66732 13.9999C4.66732 18.7833 8.28398 22.6333 12.834 23.2166V22.1666C12.834 21.4666 13.3007 20.9999 14.0007 20.9999C14.7007 20.9999 15.1673 21.4666 15.1673 22.1666V24.4999C15.1673 25.1999 14.7007 25.6666 14.0007 25.6666ZM9.33398 18.6666C8.98398 18.6666 8.63398 18.5499 8.40065 18.1999C7.46732 16.9166 7.00065 15.5166 7.00065 13.9999C7.00065 12.4833 7.46732 10.9666 8.40065 9.79992C8.75065 9.33325 9.56732 9.21658 10.034 9.56658C10.5007 9.91658 10.6173 10.7333 10.2673 11.1999C9.68398 12.0166 9.33398 12.9499 9.33398 13.9999C9.33398 15.0499 9.68398 15.9833 10.2673 16.7999C10.6173 17.2666 10.5007 18.0833 10.034 18.4333C9.80065 18.5499 9.56732 18.6666 9.33398 18.6666ZM18.6673 18.6666C18.434 18.6666 18.2007 18.5499 17.9673 18.4333C17.5007 18.0833 17.384 17.2666 17.734 16.7999C18.3173 15.9833 18.6673 15.0499 18.6673 13.9999C18.6673 12.9499 18.3173 12.0166 17.734 11.1999C17.384 10.7333 17.5007 9.91658 17.9673 9.56658C18.434 9.21658 19.2506 9.33325 19.6006 9.79992C20.534 10.9666 21.0007 12.4833 21.0007 13.9999C21.0007 15.5166 20.534 17.0333 19.6006 18.1999C19.3673 18.4333 19.0173 18.6666 18.6673 18.6666Z"></path>
+                    </svg>
+                </div>
+                <div class="bottom-menu-button">
+                    <div class="bottom-menu-button-text">
+                        <p>მისამართი</p>
+                        <div class="triangle-svg">
+                            <svg data-v-42e74cda="" width="8" height="24" viewBox="0 0 8 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path data-v-42e74cda="" d="M6.87662 14.8284L1.12339 20.8284C0.404095 21.5786 7.66111e-07 22.596 8.12483e-07 23.6569L2.04844e-07 0.343145C2.51216e-07 1.40401 0.404094 2.42143 1.12339 3.17157L6.87661 9.17157C8.37446 10.7337 8.37446 13.2663 6.87662 14.8284Z"
+                                fill="#424A4D"></path>
+                            </svg>
+                        </div>
+                    </div>
+                    <svg data-v-42e74cda="" width="28" height="28" viewBox="0 0 28 28" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <path data-v-42e74cda="" d="M14 2.33334C9.49665 2.33334 5.83331 5.99668 5.83331 10.5C5.83331 17.115 11.9466 24.5117 12.2033 24.8267C12.6466 25.3633 13.3 25.6667 14 25.6667C14.6883 25.6667 15.3533 25.3517 15.7966 24.8267C16.0533 24.5117 22.1666 17.08 22.1666 10.5C22.1666 5.99668 18.5033 2.33334 14 2.33334ZM14 23.3333C14 23.3333 8.16665 16.345 8.16665 10.5C8.16665 7.28001 10.78 4.66668 14 4.66668C17.22 4.66668 19.8333 7.28001 19.8333 10.5C19.8333 16.31 14 23.3333 14 23.3333ZM14 7.00001C12.075 7.00001 10.5 8.57501 10.5 10.5C10.5 12.425 12.075 14 14 14C15.925 14 17.5 12.425 17.5 10.5C17.5 8.57501 15.925 7.00001 14 7.00001ZM14 11.6667C13.3583 11.6667 12.8333 11.1417 12.8333 10.5C12.8333 9.85834 13.3583 9.33334 14 9.33334C14.6416 9.33334 15.1666 9.85834 15.1666 10.5C15.1666 11.1417 14.6416 11.6667 14 11.6667Z"></path>
+                    </svg>
+                </div>
+            </div>
+        </div>
+        </div>
+        <script type="module" src="index.js"></script>
+        <script src="slider.js"></script>
+</body>
+
 </html>

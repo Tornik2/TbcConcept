@@ -1,12 +1,29 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 .header_menu-button {
     cursor: pointer;
+    -webkit-transition: color .25s;
+    -o-transition: color .25s;
     transition: color .25s;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
     width: fit-content;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
     gap: 5px;
     padding: 8px;
 }
+
 @media (min-width: 990px) {
     .header_menu-button {
         display: none;
@@ -14,10 +31,15 @@
 }
 
 .header_menu-button-line-1 {
+    -webkit-transition: .6s;
+    -o-transition: .6s;
     transition: .6s;
+    -webkit-transform: translateZ(0) scaleX(1) rotateX(0deg) rotateY(0deg) rotate(0deg) skew(0deg, 0deg);
     transform: translateZ(0) scaleX(1) rotateX(0deg) rotateY(0deg) rotate(0deg) skew(0deg, 0deg);
     width: 11px;
     height: 2px;
+    -webkit-transform-origin: 100%;
+    -ms-transform-origin: 100%;
     transform-origin: 100%;
     background-color: #555f62;
     border-radius: 1px;
@@ -25,6 +47,7 @@
 
 
 .header_menu-button.active .header_menu-button-line-1 {
+    -webkit-transform: translateZ(0) scaleX(1) rotateX(0deg) rotateY(0deg) rotate(-45deg) skew(0deg, 0deg);
     transform: translateZ(0) scaleX(1) rotateX(0deg) rotateY(0deg) rotate(-45deg) skew(0deg, 0deg);
     width: 20px;
 }
@@ -34,6 +57,8 @@
     height: 2px;
     background-color: #555f62;
     border-radius: 1px;
+    -webkit-transition: .6s;
+    -o-transition: .6s;
     transition: .6s;
 }
 
@@ -42,10 +67,15 @@
 }
 
 .header_menu-button-line-3 {
+    -webkit-transition: .6s;
+    -o-transition: .6s;
     transition: .6s;
+    -webkit-transform: translateZ(0) scaleX(1) rotateX(0deg) rotateY(0deg) rotate(0deg) skew(0deg, 0deg);
     transform: translateZ(0) scaleX(1) rotateX(0deg) rotateY(0deg) rotate(0deg) skew(0deg, 0deg);
     width: 15px;
     height: 2px;
+    -webkit-transform-origin: 100% 100%;
+    -ms-transform-origin: 100% 100%;
     transform-origin: 100% 100%;
     background-color: #555f62;
     border-radius: 1px;
@@ -58,7 +88,10 @@
 }
 
 .header_menu-button.active .header_menu-button-line-3 {
+    -webkit-transform: translateY(0) translateX(0) scaleX(1) rotate(45deg);
+    -ms-transform: translateY(0) translateX(0) scaleX(1) rotate(45deg);
     transform: translateY(0) translateX(0) scaleX(1) rotate(45deg);
+    -webkit-transform-style: preserve-3d;
     transform-style: preserve-3d;
     width: 20px;
     height: 2px;
