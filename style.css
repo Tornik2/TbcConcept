@@ -1974,15 +1974,12 @@ footer {
 @media (min-width: 992px) {
 
     .scrollable-content {
+        margin-top: -79px;
         max-height: 100vh;
         max-width: 100vw;
-        position: absolute;
-        top: 0;
-        left: 0;
         padding-top: 79px;
         overflow-y: scroll;
         overflow-x: hidden;
-
     }
 
     .scrollable-content::-webkit-scrollbar {
